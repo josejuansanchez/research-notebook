@@ -1,9 +1,6 @@
 ### Research Groups
 
-Fraunhofer Heinrich Hertz Institute
------------------------------------
-
-[Multimedia Communications](http://www.hhi.fraunhofer.de/en/fields-of-competence/image-processing/research-groups/multimedia-communications.html)
+[Multimedia Communications. Fraunhofer Heinrich Hertz Institute](http://www.hhi.fraunhofer.de/en/fields-of-competence/image-processing/research-groups/multimedia-communications.html)
 
 
-[Image & Video Coding](http://www.hhi.fraunhofer.de/en/fields-of-competence/image-processing/research-groups/image-video-coding.html)
+[Image & Video Coding. Fraunhofer Heinrich Hertz Institute](http://www.hhi.fraunhofer.de/en/fields-of-competence/image-processing/research-groups/image-video-coding.html)
