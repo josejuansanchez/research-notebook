@@ -1,4 +1,5 @@
 ### JPEG2000 Packet Structure
+-----------------------------
 
 Example:  
 
@@ -16,6 +17,7 @@ Example:
 
 
 ### Warning!
+------------
 
 ```
  FF 91    00 04    00 FF    91 40 ...
