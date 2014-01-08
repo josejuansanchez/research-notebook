@@ -19,7 +19,7 @@ Example:
 ### Warning!
 ------------
 
-Be careful when you are going to search the SOP marker in a J2C file.  
+Be careful when you are going to search the SOP marker in a JPEG2000 code-stream.  
 If you only looking for ```0xFF91``` values, you can get an erroneous result.  
 
 Example:  
