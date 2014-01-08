@@ -4,7 +4,7 @@ Fraunhofer Heinrich Hertz Institute
  * [Multimedia Communications](http://www.hhi.fraunhofer.de/en/fields-of-competence/image-processing/research-groups/multimedia-communications.html)
  * [Image & Video Coding](http://www.hhi.fraunhofer.de/en/fields-of-competence/image-processing/research-groups/image-video-coding.html)
 
-### Read
+### To Read
  * [How to do Research
 At the MIT AI Lab](http://people.cs.umass.edu/~emery/misc/how-to.pdf).
 
