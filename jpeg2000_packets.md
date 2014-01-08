@@ -32,4 +32,4 @@ Example:
  SOP       Lsop     Nsop     Packet Body
 ```
 
-The last byte of **```Nsop```** and the first byte of **```Packet body```** form a 0xff91 value that could result in an erroneous interpretation.  
+The last byte of **Nsop** and the first byte of **Packet body** form a ```0xff91``` value that could result in an erroneous interpretation.  
