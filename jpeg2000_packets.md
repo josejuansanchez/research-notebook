@@ -19,6 +19,8 @@ Example:
 ### Warning!
 ------------
 
+Be careful when you are going to search the SOP marker in a J2C file.  
+
 ```
  FF 91    00 04    00 FF    91 40 ...
 \-----/  \-----/  \-----/  \--------/
