@@ -14,4 +14,4 @@ At the MIT AI Lab](http://people.cs.umass.edu/~emery/misc/how-to.pdf).
 
 
 ### Utils
-  * [Pandoc. a universal document converter](http://johnmacfarlane.net/pandoc/index.html).
+  * [Pandoc. A universal document converter](http://johnmacfarlane.net/pandoc/index.html).
