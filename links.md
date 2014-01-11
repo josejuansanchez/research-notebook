@@ -15,4 +15,4 @@ At the MIT AI Lab](http://people.cs.umass.edu/~emery/misc/how-to.pdf).
 
 ### Utils
   * [Pandoc: A universal document converter](http://johnmacfarlane.net/pandoc/index.html).
-  * [MathJax: Is an open source JavaScript display engine for mathematics that works in all browsers.](http://www.mathjax.org).
+  * [MathJax: An open source JavaScript display engine for mathematics that works in all browsers](http://www.mathjax.org).
