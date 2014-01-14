@@ -6,4 +6,4 @@ Structural SIMilarity (SSIM)
 
 ### Tools
 * [DSSIM C implementation](https://github.com/pornel/dssim).
-  This tool computes (dis)similarity between two **PNG** images using (@pornel approximation of) algorithms approximating human vision. http://pornel.net/dssim
+  This tool computes (dis)similarity between two **PNG** images using algorithms approximating human vision. http://pornel.net/dssim
