@@ -1,4 +1,4 @@
 Structural SIMilarity (SSIM)
 ============================
 
-[The SSIM Index for Image Quality Assessment](http://www.cns.nyu.edu/~lcv/ssim/)
+* [The SSIM Index for Image Quality Assessment](http://www.cns.nyu.edu/~lcv/ssim/).
