@@ -10,4 +10,4 @@ Structural SIMilarity (SSIM)
 * [DSSIM C implementation](https://github.com/pornel/dssim).
   This tool computes (dis)similarity between two **PNG** images using algorithms approximating human vision. [More info]( http://pornel.net/dssim).
 
-* [PYSSIM Python implementation](https://github.com/jterrace/pyssim). A Python module for computing the Structural Similarity Image Metric (SSIM). This module implements the Structural Similarity Image Metric (SSIM). Original code written by Antoine Vacavant from http://isit.u-clermont1.fr/~anvacava/code.html, with modifications by Christopher Godfrey and Jeff Terrace.
+* [PYSSIM Python implementation](https://github.com/jterrace/pyssim). A Python module for computing the Structural Similarity Image Metric (SSIM). Original code written by Antoine Vacavant from http://isit.u-clermont1.fr/~anvacava/code.html, with modifications by Christopher Godfrey and Jeff Terrace.
