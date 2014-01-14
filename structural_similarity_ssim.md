@@ -1,4 +1,3 @@
-
 Structural SIMilarity (SSIM)
 ============================
 
