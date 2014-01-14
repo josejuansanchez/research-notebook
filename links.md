@@ -13,7 +13,7 @@ At the MIT AI Lab](http://people.cs.umass.edu/~emery/misc/how-to.pdf).
   * [Notebooks of the Mind: Explorations of Thinking](http://www.amazon.com/Notebooks-Mind-Explorations-Vera-John-Steiner/dp/0195108965).
 
 
-### Utils
+### Tools and Utils
   * [Pandoc: A universal document converter](http://johnmacfarlane.net/pandoc/index.html).
   * [MathJax: An open source JavaScript display engine for mathematics that works in all browsers](http://www.mathjax.org).
 
