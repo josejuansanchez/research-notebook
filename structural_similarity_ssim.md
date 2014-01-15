@@ -6,11 +6,11 @@ Structural SIMilarity (SSIM)
 * [Mean squared error: love it or leave it? - A new look at signal fidelity measures](https://ece.uwaterloo.ca/~z70wang/publications/SPM09.pdf). IEEE Signal Processing Magazine, vol. 26, no. 1, pp. 98-117, Jan. 2009.
 
 
+* [Image Quality Assessment Techniques pn Spatial Domain](http://www.ijcst.com/vol23/1/sasivarnan.pdf). IJCSt Vol. 2, ISSue 3, September 2011.
 Note:
 
 "SSIM is widely used method for measurement of image quality. It works accurately can measure better across distortion types as compared to MSE and PSNR, but fails in case of highly blurred image."
 
-[Image Quality Assessment Techniques pn Spatial Domain](http://www.ijcst.com/vol23/1/sasivarnan.pdf). IJCSt Vol. 2, ISSue 3, September 2011.
 
 
 
