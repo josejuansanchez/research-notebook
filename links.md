@@ -1,6 +1,7 @@
 ### Tools and Utils
   * [Pandoc: A universal document converter](http://johnmacfarlane.net/pandoc/index.html).
   * [MathJax: An open source JavaScript display engine for mathematics that works in all browsers](http://www.mathjax.org).
+  * [Online tools for researchers](http://connectedresearchers.com/online-tools-for-researchers/).
 
 ### Links about Imaging
 
@@ -16,6 +17,7 @@ Fraunhofer Heinrich Hertz Institute
 ### To Read
  * [How to do Research
 At the MIT AI Lab](http://people.cs.umass.edu/~emery/misc/how-to.pdf).
+ * [Connected Researchers](http://connectedresearchers.com).
 
 
 ### Books
