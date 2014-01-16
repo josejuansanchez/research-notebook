@@ -12,7 +12,7 @@ Structural SIMilarity (SSIM)
 
 ### SSIM (Structural Similarity)
 
-* [Matlab/Octave implementation](https://github.com/josejuansanchez/ssim).
+* [SSIM Matlab/Octave implementation](https://github.com/josejuansanchez/ssim).
 
 * [PYSSIM Python implementation](https://github.com/jterrace/pyssim). A Python module for computing the Structural Similarity Image Metric (SSIM). Original code written by Antoine Vacavant from http://isit.u-clermont1.fr/~anvacava/code.html, with modifications by Christopher Godfrey and Jeff Terrace.
 
