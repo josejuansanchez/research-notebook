@@ -8,7 +8,7 @@ JPEG2000, Streaming, Conditional Replenishment, Motion Compensation
 #### Conditional Replenishment of JPEG2000 tiles with Motion Compensation
 
 **Notes** 
-
+* Applies a real-time motion compensation technique to the MJP2 sequences before transmission.
 
 **References**  
 
