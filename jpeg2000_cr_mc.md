@@ -13,7 +13,10 @@ Univ. Carlos III de Madrid, Madrid, Spain.
 
 #### Conditional replenishment of JPEG2000 code-blocks with motion compensation
 
-Other research, perform a conditional replenishment of JPEG2000 code-blocks with motion compensation, but this technique appears to be too complex to be applied in real-time environments, since they work with a low-level code stream. Clients and servers would also have to be purposely designed for use with these techniques. Neither do they test the delay introduced by the techniques that they describe, and all results appear to be simulated, and not tested on a real implementation.
+Drawbacks: 
+* Too complex to be applied in real-time environments.
+* Clients and servers have to be purposely designed for use with these techniques.
+
 
 2. A novel paradigm for optimized scalable video transmission based on JPEG2000 with motion.  
 A. Naman, D. Taubman.  
