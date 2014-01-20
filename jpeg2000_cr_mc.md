@@ -7,7 +7,7 @@ JPEG2000, Streaming, Conditional Replenishment, Motion Compensation
 
 #### Conditional Replenishment of JPEG2000 tiles with Motion Compensation
 
-**Drawbacks** 
+**Notes** 
 
 
 **References**  
@@ -19,7 +19,7 @@ Univ. Carlos III de Madrid, Madrid, Spain.
 
 #### Conditional Replenishment of JPEG2000 code-blocks with Motion Compensation
 
-**Drawbacks** 
+**Notes** 
 * Too complex to be applied in real-time environments.
 * Clients and servers have to be purposely designed for use with these techniques.
 
