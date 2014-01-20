@@ -18,3 +18,8 @@ IEEE International Conference on Image Processing, 2007. ICIP 2007, vol. 5, 2007
 
 3. Optimized scalable video transmission based on conditional replenishment of JPEG2000 code-blocks with motion compensation.  A. Naman, D. Taubman.  
 Proceedings of the International Workshop on Mobile Video, ACM, New York, NY, USA (2007), pp. 43–48
+
+4. A flexible video transmission system based on JPEG 2000 conditional replenishment with multiple references.  
+F. Devaux, J. Meessen, C. Parisot, J. Delaigle, B. Macq, C. De Vleeschouwer.  
+IEEE International Conference on Acoustics, Speech Signal Proces. (ICASSP 07).  
+
