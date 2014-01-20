@@ -10,7 +10,7 @@ JPEG2000, Streaming, Conditional Replenishment, Motion Compensation
 **Drawbacks** 
 
 
-**References**
+**References**  
 1. [MIJ2K: Enhanced video transmission based on conditional replenishment of JPEG2000 tiles with motion compensation](http://www.sciencedirect.com/science/article/pii/S1047320311000253).  
 Alvaro Luis Bustamante, José M. Molina López,  Miguel A. Patricio.  
 Univ. Carlos III de Madrid, Madrid, Spain.  
@@ -23,7 +23,7 @@ Univ. Carlos III de Madrid, Madrid, Spain.
 * Clients and servers have to be purposely designed for use with these techniques.
 
 
-**References**
+**References**  
 1. A novel paradigm for optimized scalable video transmission based on JPEG2000 with motion.  
 A. Naman, D. Taubman.  
 IEEE International Conference on Image Processing, 2007. ICIP 2007, vol. 5, 2007.  
