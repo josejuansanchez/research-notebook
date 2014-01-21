@@ -23,9 +23,8 @@ An implementation of these algorithms can be found on [github](https://github.co
 In October of 2013, Mozilla Corporation published a study entitled ["Lossy Compressed Image Formats Study"](http://people.mozilla.org/~josh/lossy_compressed_image_study_october_2013/) where they tested the aforementioned algorithms.
 
 
-
 ### Image
-
+* [Survey on an Image Quality Assessment Metric Based on Early Vision Features &raquo;](http://www.ijsce.org/attachments/File/v2i6/F1184112612.pdf)
 
 ### Video
 * [Survey of Objective Video Quality Measurements &raquo;](ftp://ftp.cs.wpi.edu/pub/techreports/pdf/06-02.pdf)
