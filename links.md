@@ -1,6 +1,6 @@
 ### Tools and Utils
   * [Pandoc: A universal document converter](http://johnmacfarlane.net/pandoc/index.html).
-  * [Leanpu: Publish Early, Publish Often](https://leanpub.com).
+  * [Leanpub: Publish Early, Publish Often](https://leanpub.com).
   * [MathJax: An open source JavaScript display engine for mathematics that works in all browsers](http://www.mathjax.org).
   * [Online tools for researchers](http://connectedresearchers.com/online-tools-for-researchers/).
 
