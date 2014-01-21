@@ -36,14 +36,18 @@ Structural SIMilarity (SSIM)
 
 ## Quality Comparison Algorithms
 
-Y-SSIM
-Structural Similarity algorithm [4] applied to luma channel only.
-RGB-SSIM
-Average of Structural Similarity algorithm [4] applied to R, G, and B channels.
-IW-SSIM
-Information Content Weighted Structural Similarity algorithm [5] applied to luma channel only.
-PSNR-HVS-M
-Peak Signal to Noise Ratio taking into account Contrast Sensitivity Function (CSF) and between-coefficient contrast masking of DCT basis functions [6].
+* **Y-SSIM**  
+  Structural Similarity algorithm [4] applied to luma channel only.
+
+* **RGB-SSIM**  
+  Average of Structural Similarity algorithm [4] applied to R, G, and B channels.
+
+* **IW-SSIM**  
+  Information Content Weighted Structural Similarity algorithm [5] applied to luma channel only.
+
+* **PSNR-HVS-M**  
+  Peak Signal to Noise Ratio taking into account Contrast Sensitivity Function (CSF) and between-coefficient contrast masking of DCT basis functions [6].
+
 All of these algorithms compare two images and return a number indicating the degree to which the second image is similar to the first. In all cases, no matter what the scale, higher numbers indicate a higher degree of similarity.
 
 It's unclear which algorithm is best in terms of human visual perception, so we tested with four of the most respected algorithms. 
