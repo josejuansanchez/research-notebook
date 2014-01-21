@@ -56,5 +56,5 @@ It's unclear which algorithm is best in terms of human visual perception.
 
 An implementation of these algorithms can be found on [github](https://github.com/bdaehlie/web_image_formats).
 
-In October of 2013, Mozilla Corporation published a study entitled [Lossy Compressed Image Formats Study](http://people.mozilla.org/~josh/lossy_compressed_image_study_october_2013/) where they tested the aforementioned algorithms.
+In October of 2013, Mozilla Corporation published a study entitled "[Lossy Compressed Image Formats Study](http://people.mozilla.org/~josh/lossy_compressed_image_study_october_2013/)" where they tested the aforementioned algorithms.
 
