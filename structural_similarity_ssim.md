@@ -1,5 +1,5 @@
-Structural SIMilarity (SSIM)
-============================
+Structural SIMilarity Index Metric (SSIM)
+=========================================
 
 1. [The SSIM Index for Image Quality Assessment](http://www.cns.nyu.edu/~lcv/ssim/).  
   [Zhou Wang](http://www.ece.uwaterloo.ca/~z70wang/), [Alan C. Bovik](http://live.ece.utexas.edu/people/bovik/), [Hamid R. Sheikh](http://live.ece.utexas.edu/People/people_detail.php?id=92) and [Eero P. Simoncelli](http://www.cns.nyu.edu/~eero/).
