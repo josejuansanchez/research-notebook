@@ -17,6 +17,9 @@ Structural SIMilarity (SSIM)
 5. [IW-SSIM: Information Content Weighted Structural Similarity Index for Image Quality Assessment](https://ece.uwaterloo.ca/~z70wang/research/iwssim/).  
   Zhou Wang and Qiang Li, "Information Content Weighting for Perceptual Image Quality Assessment," IEEE Transactions on Image Processing, vol. 20, no. 5, pp. 1185-1198, May 2011.
 
+6. [Nikolay Ponomarenko homepage - PSNR-HVS-M download page](http://www.ponomarenko.info/psnrhvsm.htm).  
+  Nikolay Ponomarenko, Flavia Silvestri, Karen Egiazarian, Marco Carli, Jaakko Astola, Vladimir Lukin, On between-coefficient contrast masking of DCT basis functions, CD-ROM Proceedings of the Third International Workshop on Video Processing and Quality Metrics for Consumer Electronics VPQM-07, Scottsdale, Arizona, USA, 25-26 January, 2007, 4 p.
+
 
 ## Tools
 
