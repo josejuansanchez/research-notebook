@@ -14,6 +14,9 @@ Structural SIMilarity (SSIM)
   IJCSt Vol. 2, ISSue 3, September 2011.  
   Note: "SSIM is widely used method for measurement of image quality. It works accurately can measure better across distortion types as compared to MSE and PSNR, but **fails in case of highly blurred image**."
 
+5. [IW-SSIM: Information Content Weighted Structural Similarity Index for Image Quality Assessment](https://ece.uwaterloo.ca/~z70wang/research/iwssim/).  
+  Zhou Wang and Qiang Li, "Information Content Weighting for Perceptual Image Quality Assessment," IEEE Transactions on Image Processing, vol. 20, no. 5, pp. 1185-1198, May 2011.
+
 
 ## Tools
 
