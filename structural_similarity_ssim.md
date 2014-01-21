@@ -36,6 +36,8 @@ Structural SIMilarity (SSIM)
 
 ## Quality Comparison Algorithms
 
+Four of the most respected algorithms. 
+
 * **Y-SSIM**  
   Structural Similarity algorithm [1] applied to luma channel only.
 
@@ -50,6 +52,6 @@ Structural SIMilarity (SSIM)
 
 All of these algorithms compare two images and return a number indicating the degree to which the second image is similar to the first. In all cases, no matter what the scale, higher numbers indicate a higher degree of similarity.
 
-It's unclear which algorithm is best in terms of human visual perception, so we tested with four of the most respected algorithms. 
+It's unclear which algorithm is best in terms of human visual perception.
 
 
