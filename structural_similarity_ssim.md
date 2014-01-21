@@ -54,4 +54,5 @@ All of these algorithms compare two images and return a number indicating the de
 
 It's unclear which algorithm is best in terms of human visual perception.
 
+An implementation of these algorithms can be found on [github](https://github.com/bdaehlie/web_image_formats).
 
