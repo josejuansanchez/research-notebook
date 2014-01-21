@@ -24,16 +24,14 @@ In October of 2013, Mozilla Corporation published a study entitled ["Lossy Compr
 
 
 
-Image
-=====
+### Image
 
-Video
-=====
+
+### Video
 * [Survey of Objective Video Quality Measurements &raquo;](ftp://ftp.cs.wpi.edu/pub/techreports/pdf/06-02.pdf)
 
 
-References
-==========
+### References
 
 1. [The SSIM Index for Image Quality Assessment](http://www.cns.nyu.edu/~lcv/ssim/).  
   [Zhou Wang](http://www.ece.uwaterloo.ca/~z70wang/), [Alan C. Bovik](http://live.ece.utexas.edu/people/bovik/), [Hamid R. Sheikh](http://live.ece.utexas.edu/People/people_detail.php?id=92) and [Eero P. Simoncelli](http://www.cns.nyu.edu/~eero/).
