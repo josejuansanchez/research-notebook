@@ -16,6 +16,7 @@ Example:
 
 
 ### Warning!
+============
 
 * **SOP marker**  
 Be careful when you are going to search the SOP marker in a JPEG2000 code-stream.  
