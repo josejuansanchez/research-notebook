@@ -1,5 +1,5 @@
-Conditional Replenishment + Motion Compensation
-===============================================
+## Conditional Replenishment + Motion Compensation
+
 
 #### Keywords
 JPEG2000, Streaming, Conditional Replenishment, Motion Compensation
