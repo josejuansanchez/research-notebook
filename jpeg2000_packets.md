@@ -1,5 +1,5 @@
-### JPEG2000 Packet Structure
------------------------------
+## JPEG2000 Packet Structure
+----------------------------
 
 Example:  
 
