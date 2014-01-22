@@ -19,6 +19,12 @@ Fraunhofer Heinrich Hertz Institute
  * [How to do Research
 At the MIT AI Lab](http://people.cs.umass.edu/~emery/misc/how-to.pdf).
  * [Connected Researchers](http://connectedresearchers.com).
+ 
+
+### About PhD
+ * http://academia.stackexchange.com
+ * [Book: The Ph. D. Grind](http://www.pgbovine.net/PhD-memoir.htm]. The Ph.D. Grind, a 122-page e-book, is the first known detailed account of an entire Ph.D. experience. 
+ * [The PhD Application Handbook](http://www.amazon.co.uk/gp/product/0335219527)
 
 
 ### Books
