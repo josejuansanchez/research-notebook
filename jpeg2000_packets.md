@@ -19,6 +19,23 @@ Example:
 ### Warning!
 ------------
 
+* SOP marker
+Be careful when you are going to search the SOP marker in a JPEG2000 code-stream.  
+If you only looking for ```0xFF91``` values, you can get an erroneous result.  
+
+Example:  
+
+```
+ FF 91    00 04    00 FF    91 40 ...
+\-----/  \-----/  \-----/  \--------/
+ 16 bits  16 bits  16 bits   N bits
+ 
+ SOP       Lsop     Nsop     Packet Body
+```
+
+The last byte of **Nsop** and the first byte of **Packet body** form a ```0xFF91``` value that could result in an erroneous interpretation.  
+
+* EOC marker
 Be careful when you are going to search the SOP marker in a JPEG2000 code-stream.  
 If you only looking for ```0xFF91``` values, you can get an erroneous result.  
 
