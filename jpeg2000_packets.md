@@ -23,7 +23,7 @@ Example:
 Be careful when you are going to search the SOP marker in a JPEG2000 code-stream.  
 If you only looking for ```0xFF91``` values, you can get an erroneous result.  
 
-Example:  
+  Example:  
 
 ```
  FF 91    00 04    00 FF    91 40 ...
@@ -39,7 +39,7 @@ The last byte of **Nsop** and the first byte of **Packet body** form a ```0xFF91
 Be careful when you are going to search the SOP marker in a JPEG2000 code-stream.  
 If you only looking for ```0xFFD9``` values, you can get an erroneous result.  
 
-Example:  
+  Example:  
 
 ```
  FF 91    00 04    01 FF    D9 ...
