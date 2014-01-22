@@ -1,5 +1,4 @@
-Linux Tricks
-============
+## Linux Tricks
 
 * How to redirect stdout and stderr output messages to a file?
 
