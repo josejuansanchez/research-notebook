@@ -28,6 +28,8 @@ Fraunhofer Heinrich Hertz Institute
 At the MIT AI Lab](http://people.cs.umass.edu/~emery/misc/how-to.pdf).
  * [Connected Researchers](http://connectedresearchers.com).
  
+### HandBooks
+  * [Engineering Statistics Handbook &raquo;](http://www.itl.nist.gov/div898/handbook/index.htm)
 
 ### Books
   * [Notebooks of the Mind: Explorations of Thinking](http://www.amazon.com/Notebooks-Mind-Explorations-Vera-John-Steiner/dp/0195108965).
