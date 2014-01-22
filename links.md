@@ -28,7 +28,7 @@ Fraunhofer Heinrich Hertz Institute
 At the MIT AI Lab](http://people.cs.umass.edu/~emery/misc/how-to.pdf).
  * [Connected Researchers](http://connectedresearchers.com).
  
-### HandBooks
+### Handbooks
   * [Engineering Statistics Handbook &raquo;](http://www.itl.nist.gov/div898/handbook/index.htm)
 
 ### Books
