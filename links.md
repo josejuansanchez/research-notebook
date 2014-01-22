@@ -14,8 +14,8 @@
 
 ### Links about Imaging
 
-* [Lossy Compressed Image Formats Study &raquo;](http://people.mozilla.org/~josh/lossy_compressed_image_study_october_2013/). Mozilla Corporation, October 2013.
-* [Mobile ISP image recompression &raquo;](http://calendar.perfplanet.com/2013/mobile-isp-image-recompression/) by Kornel Lesiński.
+* [Lossy Compressed Image Formats Study](http://people.mozilla.org/~josh/lossy_compressed_image_study_october_2013/). Mozilla Corporation, October 2013.
+* [Mobile ISP image recompression](http://calendar.perfplanet.com/2013/mobile-isp-image-recompression/) by Kornel Lesiński.
 
 ### Research Groups
 
