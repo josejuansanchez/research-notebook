@@ -1,4 +1,4 @@
-### Data Compression 
+## Data Compression 
  * [New data-compression method reduces big-data bottleneck &raquo;](http://www.kurzweilai.net/new-data-compression-method-reduces-big-data-bottleneck)  
   Outperforms and enhances JPEG, handles both analog and digital signals.
 
