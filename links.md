@@ -7,10 +7,10 @@
 
 
 ### Tools and Utils
-  * [Pandoc: A universal document converter &raquo;](http://johnmacfarlane.net/pandoc/index.html).
-  * [Leanpub: Publish Early, Publish Often &raquo;](https://leanpub.com).
-  * [MathJax: An open source JavaScript display engine for mathematics that works in all browsers &raquo;](http://www.mathjax.org).
-  * [Online tools for researchers &raquo;](http://connectedresearchers.com/online-tools-for-researchers/).
+  * [Pandoc: A universal document converter &raquo;](http://johnmacfarlane.net/pandoc/index.html)
+  * [Leanpub: Publish Early, Publish Often &raquo;](https://leanpub.com)
+  * [MathJax: An open source JavaScript display engine for mathematics that works in all browsers &raquo;](http://www.mathjax.org)
+  * [Online tools for researchers &raquo;](http://connectedresearchers.com/online-tools-for-researchers/)
 
 ### Links about Imaging
 
@@ -24,11 +24,11 @@ Fraunhofer Heinrich Hertz Institute
  * [Image & Video Coding &raquo;](http://www.hhi.fraunhofer.de/en/fields-of-competence/image-processing/research-groups/image-video-coding.html)
 
 ### To Read
- * [How to do Research at the MIT AI Lab &raquo;](http://people.cs.umass.edu/~emery/misc/how-to.pdf).
- * [Connected Researchers &raquo;](http://connectedresearchers.com).
+ * [How to do Research at the MIT AI Lab &raquo;](http://people.cs.umass.edu/~emery/misc/how-to.pdf)
+ * [Connected Researchers &raquo;](http://connectedresearchers.com)
  
 ### Handbooks
   * [Engineering Statistics Handbook &raquo;](http://www.itl.nist.gov/div898/handbook/index.htm)
 
 ### Books
-  * [Notebooks of the Mind: Explorations of Thinking &raquo;](http://www.amazon.com/Notebooks-Mind-Explorations-Vera-John-Steiner/dp/0195108965).
+  * [Notebooks of the Mind: Explorations of Thinking &raquo;](http://www.amazon.com/Notebooks-Mind-Explorations-Vera-John-Steiner/dp/0195108965)
