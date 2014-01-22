@@ -37,16 +37,16 @@ The last byte of **Nsop** and the first byte of **Packet body** form a ```0xFF91
 
 * **EOC marker**  
 Be careful when you are going to search the SOP marker in a JPEG2000 code-stream.  
-If you only looking for ```0xFF91``` values, you can get an erroneous result.  
+If you only looking for ```0xFFD9``` values, you can get an erroneous result.  
 
 Example:  
 
 ```
- FF 91    00 04    00 FF    91 40 ...
+ FF 91    00 04    01 FF    D9 ...
 \-----/  \-----/  \-----/  \--------/
  16 bits  16 bits  16 bits   N bits
  
  SOP       Lsop     Nsop     Packet Body
 ```
 
-The last byte of **Nsop** and the first byte of **Packet body** form a ```0xFF91``` value that could result in an erroneous interpretation.  
+The last byte of **Nsop** and the first byte of **Packet body** form a ```0xFFD9``` value that could result in an erroneous interpretation.  
