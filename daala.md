@@ -21,3 +21,4 @@ The goal of the project is to provide a free to implement, use and distribute di
 * [Tim Terriberry &raquo;](http://people.xiph.org/~tterribe/). Theora project lead. 
 * [Jack Moffitt &raquo;](http://en.wikipedia.org/wiki/Jack_Moffitt). Xiph co-founders, author of Icecast.
 * [Monty Montgomery &raquo;](http://en.wikipedia.org/wiki/Chris_Montgomery). The author of Ogg Vorbis.
+* [people.xiph.org](https://people.xiph.org/)
