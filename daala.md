@@ -11,7 +11,7 @@ The goal of the project is to provide a free to implement, use and distribute di
 ### Documentation
 * [Wiki &raquo;](http://wiki.xiph.org/Daala)
 * [An Introduction to Video Coding &raquo;](http://people.xiph.org/~tterribe/pubs/lca2012/auckland/intro_to_video1.pdf)
-* [Talk: Opus and Daala: State of the Art Royalty-free Codecs &raquo;](https://www.youtube.com/watch?v=u3Yc5Hn9bhQ)
+* [Talk: Opus and Daala: State of the Art Royalty-free Codecs &raquo;](https://www.youtube.com/watch?v=u3Yc5Hn9bhQ). This talk will cover our success with Opus and our plans for Daala and how we will create codec infrastructure which is convincingly royalty free, has state-of-the-art performance, and can be easily deployed and integrated, with the hope that someday everyone can stop worrying about codecs and go on to build fantastic things without having to compromise on performance or navigating licensing.
  
 ### Source
 * [Official Daala video codec repository &raquo;](https://git.xiph.org/?p=daala.git;a=summary)
