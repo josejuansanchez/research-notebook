@@ -14,3 +14,9 @@ The goal of the project is to provide a free to implement, use and distribute di
  
 ### Source
 * [Official Daala video codec repository &raquo;](https://git.xiph.org/?p=daala.git;a=summary)
+ 
+### Team
+* [Jean-Marc Valin &raquo;](http://jmvalin.ca/). Co-inventor of Opus, the new standard for audio encoding
+* [Tim Terriberry &raquo;](http://people.xiph.org/~tterribe/). Theora project lead. 
+* [Jack Moffitt &raquo;](http://en.wikipedia.org/wiki/Jack_Moffitt). Xiph co-founders, author of Icecast.
+* [Monty Montgomery &raquo;](http://en.wikipedia.org/wiki/Chris_Montgomery). The author of Ogg Vorbis.
