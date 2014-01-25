@@ -10,6 +10,7 @@ JPEG2000, Streaming, Conditional Replenishment, Motion Compensation
 **Notes** 
 * Reduces the inter-frame redundancy present in common JPEG2000 sequences (MJP2 sequences).
 * Applies a real-time motion compensation technique to the MJP2 sequences before transmission.
+* The propose transmitting only the tiles that change in each JPEG2000 frame.
 
 **References**  
 
