@@ -5,6 +5,6 @@ JPEG2000
 Streaming  
 Conditional Replenishment  
 Motion Compensation  
-Intra Coding
-Adaptive Delivery
-Semantic Based Coding
+Intra Coding  
+Adaptive Delivery  
+Semantic Based Coding  
