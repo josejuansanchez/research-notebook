@@ -50,3 +50,10 @@ IEEE International Conference on Acoustics, Speech Signal Proces. (ICASSP 07).
  
 **References**
 * [A flexible video transmission system based on JPEG2000 Conditional Replenishment with multiple references](http://www.intopix.com/uploaded/Download%20Publications/intoPIX%20-%20A%20FLEXIBLE%20VIDEO%20TRANSMISSION%20SYSTEM%20BASED%20ON%20JPEG%202000%20CONDITIONAL%20REPLENISHMENTWITH%20MULTIPLE%20REFERENCES_FO_Devaux.pdf)
+
+---
+
+### Patents
+
+* [Conditional replenishment for motion JPEG2000 &raquo;](http://www.google.com/patents/US8577157)  
+  
