@@ -31,4 +31,5 @@ Fraunhofer Heinrich Hertz Institute
   * [Engineering Statistics Handbook &raquo;](http://www.itl.nist.gov/div898/handbook/index.htm)
 
 ### Books
+  * [Image Statistics in Visual Computing &raquo;](http://www.imagestatisticsbook.com)
   * [Notebooks of the Mind: Explorations of Thinking &raquo;](http://www.amazon.com/Notebooks-Mind-Explorations-Vera-John-Steiner/dp/0195108965)
