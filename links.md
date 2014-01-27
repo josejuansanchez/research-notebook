@@ -6,6 +6,9 @@
  * [The PhD Application Handbook &raquo;](http://www.amazon.co.uk/PhD-Application-Handbook-Revised-Skills/dp/0335246966/)
 
 
+### Write good papers
+  * [Write good papers](http://lemire.me/blog/rules-to-write-a-good-research-paper/).
+
 ### Tools and Utils
   * [Pandoc: A universal document converter &raquo;](http://johnmacfarlane.net/pandoc/index.html)
   * [Leanpub: Publish Early, Publish Often &raquo;](https://leanpub.com)
