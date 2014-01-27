@@ -56,5 +56,6 @@ IEEE International Conference on Acoustics, Speech Signal Proces. (ICASSP 07).
 ### Patents
 
 * [Conditional replenishment for motion JPEG2000 &raquo;](http://www.google.com/patents/US8577157)  
-  Inventors: [Fabrice Le Leannec](http://www.technicolor.com/en/talent/researcher/le-leannec) and [Xavier Henocq](http://www.informatik.uni-trier.de/~ley/pers/hd/h/Henocq:Xavier.html). / Canon.
+  Inventors: [Fabrice Le Leannec](http://www.technicolor.com/en/talent/researcher/le-leannec) and [Xavier Henocq](http://www.informatik.uni-trier.de/~ley/pers/hd/h/Henocq:Xavier.html). / Canon.  
+  Date of Patent: Nov. 5, 2013
   
