@@ -63,3 +63,6 @@ IEEE International Conference on Acoustics, Speech Signal Proces. (ICASSP 07).
 
 * [Rate-constrained Conditional Replenishment Video Coding with Adaptive Change Detection](http://www.stanford.edu/class/ee368b/Projects/chiao/)  
   Xinqiao Liu. December 1, 2000.  
+
+* [A New Video Compression Scheme Combining Conditional Replenishment and Address Event Representation](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4387612)  
+  IEEE Workshop on Signal Processing Systems, 2007. Date of Conference: 17-19 Oct. 2007.
