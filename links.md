@@ -27,6 +27,7 @@ Fraunhofer Heinrich Hertz Institute
  * [How to do Research at the MIT AI Lab &raquo;](http://people.cs.umass.edu/~emery/misc/how-to.pdf)
  * [Connected Researchers &raquo;](http://connectedresearchers.com)
  * [Job & Intership opportunities at Technicolor &raquo;](http://www.technicolor.com/en/innovation/research-innovation/ri-laboratories/imaging-science-lab/job-internship-opportunities)
+ * [Technicolor &raquo;](http://www.technicolor.com)
  
 ### Handbooks
   * [Engineering Statistics Handbook &raquo;](http://www.itl.nist.gov/div898/handbook/index.htm)
