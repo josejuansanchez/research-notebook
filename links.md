@@ -27,6 +27,7 @@ Fraunhofer Heinrich Hertz Institute
  * [How to do Research at the MIT AI Lab &raquo;](http://people.cs.umass.edu/~emery/misc/how-to.pdf)
  * [Connected Researchers &raquo;](http://connectedresearchers.com)
  * [Job & Intership opportunities at Technicolor &raquo;](http://www.technicolor.com/en/innovation/research-innovation/ri-laboratories/imaging-science-lab/job-internship-opportunities)
+ * [Video Processing Intership opportunities at Technicolor  &raquo;](http://www.technicolor.com/en/innovation/student-day/job-internship-opportunities-ri-labs/video-processing-internships)
  * [Technicolor &raquo;](http://www.technicolor.com)
  
 ### Handbooks
