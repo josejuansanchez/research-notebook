@@ -59,3 +59,7 @@ IEEE International Conference on Acoustics, Speech Signal Proces. (ICASSP 07).
   Inventors: [Fabrice Le Leannec](http://www.technicolor.com/en/talent/researcher/le-leannec) and [Xavier Henocq](http://www.informatik.uni-trier.de/~ley/pers/hd/h/Henocq:Xavier.html). / Canon.  
   Date of Patent: Nov. 5, 2013
   
+---
+
+* [Rate-constrained Conditional Replenishment Video Coding with Adaptive Change Detection](http://www.stanford.edu/class/ee368b/Projects/chiao/)  
+  Xinqiao Liu. December 1, 2000.  
