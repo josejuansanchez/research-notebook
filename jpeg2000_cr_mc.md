@@ -53,8 +53,8 @@ IEEE International Conference on Acoustics, Speech Signal Proces. (ICASSP 07).
 
 
 
-* [JPEG 2000 and Parity Bit Replenishment for Remote Video Browsing](http://www.intopix.com/uploaded/Download%20Publications/intoPIX_JPEG%202000%20and%20Parity%20Bit%20Replenishment%20for%20Remote%20Video%20Browsing_Thesis_FO_Devaux.pdf)  
-François-Olivier Devaux
+* **Thesis**: [JPEG 2000 and Parity Bit Replenishment for Remote Video Browsing](http://www.intopix.com/uploaded/Download%20Publications/intoPIX_JPEG%202000%20and%20Parity%20Bit%20Replenishment%20for%20Remote%20Video%20Browsing_Thesis_FO_Devaux.pdf)  
+François-Olivier Devaux. September 2008.
 
 ---
 
