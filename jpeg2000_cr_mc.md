@@ -24,6 +24,7 @@ Univ. Carlos III de Madrid, Madrid, Spain.
 #### Conditional Replenishment of JPEG2000 code-blocks with Motion Compensation
 
 **Notes** 
+
 * Too complex to be applied in real-time environments.
 * Clients and servers have to be purposely designed for use with these techniques.
 
@@ -46,15 +47,18 @@ IEEE International Conference on Acoustics, Speech Signal Proces. (ICASSP 07).
 ---
 
 **Notes**
+
 * They propose a rate-distortion optimal strategy to select the most profitable packets to transmit. 
 * They provide the client with two references, the previous reconstructed frame and an estimation of the current scene background, which improves the transmission system performances.
  
 **References**
+
 * [A flexible video transmission system based on JPEG2000 Conditional Replenishment with multiple references](http://www.intopix.com/uploaded/Download%20Publications/intoPIX%20-%20A%20FLEXIBLE%20VIDEO%20TRANSMISSION%20SYSTEM%20BASED%20ON%20JPEG%202000%20CONDITIONAL%20REPLENISHMENTWITH%20MULTIPLE%20REFERENCES_FO_Devaux.pdf)
 
 
 
 * **Thesis**:
+
   * [JPEG 2000 and Parity Bit Replenishment for Remote Video Browsing](http://www.intopix.com/uploaded/Download%20Publications/intoPIX_JPEG%202000%20and%20Parity%20Bit%20Replenishment%20for%20Remote%20Video%20Browsing_Thesis_FO_Devaux.pdf)  
   François-Olivier Devaux. September 2008.
   * [JPEG2000-Based Scalable Interactive Video (JSIV)](https://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CDUQFjAA&url=http%3A%2F%2Funsworks.unsw.edu.au%2Ffapi%2Fdatastream%2Funsworks%3A9778%2FSOURCE02&ei=x0zqUoOfMqv07Abl_4G4Dw&usg=AFQjCNEd2CqPc-IbL2rKOa6Axr_JJw6aog&sig2=z8pLe5Lb2GOWY-1rvEvD0w&bvm=bv.60444564,d.ZGU)  
