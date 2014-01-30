@@ -36,7 +36,7 @@ A. Naman, D. Taubman.
 IEEE International Conference on Image Processing, 2007. ICIP 2007, vol. 5, 2007.  
 
 
-2. Optimized scalable video transmission based on conditional replenishment of JPEG2000 code-blocks with motion compensation.  A. Naman, D. Taubman.  
+2. [Optimized scalable video transmission based on conditional replenishment of JPEG2000 code-blocks with motion compensation](http://delivery.acm.org/10.1145/1300000/1290061/p43-naman.pdf).  A. Naman, D. Taubman.  
 Proceedings of the International Workshop on Mobile Video, ACM, New York, NY, USA (2007), pp. 43–48
 
 3. A flexible video transmission system based on JPEG 2000 conditional replenishment with multiple references.  
