@@ -29,7 +29,7 @@ Univ. Carlos III de Madrid, Madrid, Spain.
 
 **References**  
 
-1. A novel paradigm for optimized scalable video transmission based on JPEG2000 with motion.  
+1. [A novel paradigm for optimized scalable video transmission based on JPEG2000 with motion.](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4379773)  
 A. Naman, D. Taubman.  
 IEEE International Conference on Image Processing, 2007. ICIP 2007, vol. 5, 2007.  
 
@@ -50,6 +50,11 @@ IEEE International Conference on Acoustics, Speech Signal Proces. (ICASSP 07).
  
 **References**
 * [A flexible video transmission system based on JPEG2000 Conditional Replenishment with multiple references](http://www.intopix.com/uploaded/Download%20Publications/intoPIX%20-%20A%20FLEXIBLE%20VIDEO%20TRANSMISSION%20SYSTEM%20BASED%20ON%20JPEG%202000%20CONDITIONAL%20REPLENISHMENTWITH%20MULTIPLE%20REFERENCES_FO_Devaux.pdf)
+
+
+
+* [JPEG 2000 and Parity Bit Replenishment for Remote Video Browsing](http://www.intopix.com/uploaded/Download%20Publications/intoPIX_JPEG%202000%20and%20Parity%20Bit%20Replenishment%20for%20Remote%20Video%20Browsing_Thesis_FO_Devaux.pdf)  
+François-Olivier Devaux
 
 ---
 
