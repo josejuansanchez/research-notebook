@@ -65,6 +65,13 @@ IEEE International Conference on Acoustics, Speech Signal Proces. (ICASSP 07).
 * [JPEG2000-Based Scalable Interactive Video (JSIV)](https://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CDUQFjAA&url=http%3A%2F%2Funsworks.unsw.edu.au%2Ffapi%2Fdatastream%2Funsworks%3A9778%2FSOURCE02&ei=x0zqUoOfMqv07Abl_4G4Dw&usg=AFQjCNEd2CqPc-IbL2rKOa6Axr_JJw6aog&sig2=z8pLe5Lb2GOWY-1rvEvD0w&bvm=bv.60444564,d.ZGU)  
   Aous Thabit Naman. September 2010.
 
+**Notes**
+
+* The server optimally selects the number of quality layers for each precinct
+it transmits and decides on any side-information that needs to be transmitted while the
+client attempts to make most of the received (distorted) frames.
+
+
 ---
 
 ### Patents
