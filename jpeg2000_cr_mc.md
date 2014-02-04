@@ -95,6 +95,15 @@ existing predictive coding standards in conventional streaming applications; how
 JSIV produces significant improvements when its scalability and accessibility features,
 such as the region of interest, are employed.
 
+* The **preprocessing stage** is responsible for compressing each frame
+independently of the other frames into the JPEG2000 format and preparing side-
+information for these frames. The side information can include distortion-length slope
+tables, motion information, motion distortions, and any other side information that
+might be required during media serving. Side-information can either be generated off-
+line for pre-recorded media or in real-time for live media. Many of these operations are
+independent of each other and can be easily delegated to one or more machines in a
+content delivery network.
+
 ---
 
 ### Patents
