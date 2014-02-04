@@ -76,6 +76,11 @@ to exploit inter-frame redundancy; and loosely-coupled server and client policie
 it transmits and decides on any side-information that needs to be transmitted while the
 client attempts to make most of the received (distorted) frames.
 
+* The client decides which precincts are predicted and which are decoded from received data (or
+possibly filled with zeros in the absence of received data). Thus, in JSIV, a predicted
+frame typically has some of its precincts predicted from nearby frames while others
+are decoded from received intra-coded precincts; JSIV never uses frame differences or
+prediction residues.
 
 ---
 
