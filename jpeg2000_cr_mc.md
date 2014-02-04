@@ -90,6 +90,11 @@ client and the server policies are intelligent enough and make reasonable decisi
 the decisions made by the server are likely to have the expected impact on the client’s
 decisions.
 
+* Experimental results show that JSIV’s performance is slightly inferior to that of
+existing predictive coding standards in conventional streaming applications; however,
+JSIV produces significant improvements when its scalability and accessibility features,
+such as the region of interest, are employed.
+
 ---
 
 ### Patents
