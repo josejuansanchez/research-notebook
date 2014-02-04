@@ -57,12 +57,12 @@ IEEE International Conference on Acoustics, Speech Signal Proces. (ICASSP 07).
 
 ---
 
-**Thesis**:
+### Thesis
 
-* [JPEG 2000 and Parity Bit Replenishment for Remote Video Browsing](http://www.intopix.com/uploaded/Download%20Publications/intoPIX_JPEG%202000%20and%20Parity%20Bit%20Replenishment%20for%20Remote%20Video%20Browsing_Thesis_FO_Devaux.pdf)  
+* **Thesis**: [JPEG 2000 and Parity Bit Replenishment for Remote Video Browsing](http://www.intopix.com/uploaded/Download%20Publications/intoPIX_JPEG%202000%20and%20Parity%20Bit%20Replenishment%20for%20Remote%20Video%20Browsing_Thesis_FO_Devaux.pdf)  
   François-Olivier Devaux. September 2008.
 
-* [JPEG2000-Based Scalable Interactive Video (JSIV)](https://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CDUQFjAA&url=http%3A%2F%2Funsworks.unsw.edu.au%2Ffapi%2Fdatastream%2Funsworks%3A9778%2FSOURCE02&ei=x0zqUoOfMqv07Abl_4G4Dw&usg=AFQjCNEd2CqPc-IbL2rKOa6Axr_JJw6aog&sig2=z8pLe5Lb2GOWY-1rvEvD0w&bvm=bv.60444564,d.ZGU)  
+* **Thesis** [JPEG2000-Based Scalable Interactive Video (JSIV)](https://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CDUQFjAA&url=http%3A%2F%2Funsworks.unsw.edu.au%2Ffapi%2Fdatastream%2Funsworks%3A9778%2FSOURCE02&ei=x0zqUoOfMqv07Abl_4G4Dw&usg=AFQjCNEd2CqPc-IbL2rKOa6Axr_JJw6aog&sig2=z8pLe5Lb2GOWY-1rvEvD0w&bvm=bv.60444564,d.ZGU)  
   Aous Thabit Naman. September 2010.
 
 **Notes**
