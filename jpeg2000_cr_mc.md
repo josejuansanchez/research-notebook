@@ -82,6 +82,14 @@ frame typically has some of its precincts predicted from nearby frames while oth
 are decoded from received intra-coded precincts; JSIV never uses frame differences or
 prediction residues.
 
+* The philosophy behind these policies is that neither the server nor the client drives
+the video streaming interaction, but rather the server dynamically selects and sends the
+pieces that, it thinks, best serve the client needs and, in turn, the client makes most
+of the pieces of information it has. The JSIV paradigm postulates that if both the
+client and the server policies are intelligent enough and make reasonable decisions, then
+the decisions made by the server are likely to have the expected impact on the client’s
+decisions.
+
 ---
 
 ### Patents
