@@ -67,6 +67,11 @@ IEEE International Conference on Acoustics, Speech Signal Proces. (ICASSP 07).
 
 **Notes**
 
+* JSIV relies on three main concepts: storing the video sequence as independent
+JPEG2000 frames to provide for quality and spatial resolution scalability, as well as
+temporal and spatial accessibility; prediction and conditional replenishment of precincts
+to exploit inter-frame redundancy; and loosely-coupled server and client policies.
+
 * The server optimally selects the number of quality layers for each precinct
 it transmits and decides on any side-information that needs to be transmitted while the
 client attempts to make most of the received (distorted) frames.
