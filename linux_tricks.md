@@ -15,6 +15,5 @@ $ cat images/*.ppm | ppmtoy4m > video.yuv
 * YUV to PPM
 
 ```
-y4mtoppm < video_input.y4m | pnmsplit - "%d.ppm"
+$ y4mtoppm < video_input.y4m | pnmsplit - "%d.ppm"
 ```
-
