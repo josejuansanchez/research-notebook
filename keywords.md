@@ -10,5 +10,5 @@ Adaptive Delivery
 Semantic Based Coding  
 Low-Rate Video Transmission  
 Video Surveillance  
-Intereactive Video Delivery
+Intereactive Video Delivery  
 Simulcast
