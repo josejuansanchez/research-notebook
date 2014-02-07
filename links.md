@@ -26,6 +26,10 @@ Fraunhofer Heinrich Hertz Institute
  * [Multimedia Communications &raquo;](http://www.hhi.fraunhofer.de/en/fields-of-competence/image-processing/research-groups/multimedia-communications.html)
  * [Image & Video Coding &raquo;](http://www.hhi.fraunhofer.de/en/fields-of-competence/image-processing/research-groups/image-video-coding.html)
 
+### Researchers
+
+* [Prof. Dr.-Ing. Thomas Wiegand &raquo;](http://iphome.hhi.de/wiegand/). Executive Director, Fraunhofer Heinrich Hertz Institute
+
 ### To Read
  * [How to do Research at the MIT AI Lab &raquo;](http://people.cs.umass.edu/~emery/misc/how-to.pdf)
  * [Connected Researchers &raquo;](http://connectedresearchers.com)
