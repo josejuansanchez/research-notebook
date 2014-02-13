@@ -22,11 +22,10 @@
 
 ### Research Groups
 
-Fraunhofer Heinrich Hertz Institute  
- * [Multimedia Communications &raquo;](http://www.hhi.fraunhofer.de/en/fields-of-competence/image-processing/research-groups/multimedia-communications.html)
- * [Image & Video Coding &raquo;](http://www.hhi.fraunhofer.de/en/fields-of-competence/image-processing/research-groups/image-video-coding.html)
- 
- * [MERL - Mitsubishi Electric Research Laboratories &raquo;](http://www.merl.com/research/multimedia )
+* Fraunhofer Heinrich Hertz Institute  
+  * [Multimedia Communications &raquo;](http://www.hhi.fraunhofer.de/en/fields-of-competence/image-processing/research-groups/multimedia-communications.html)
+  * [Image & Video Coding &raquo;](http://www.hhi.fraunhofer.de/en/fields-of-competence/image-processing/research-groups/image-video-coding.html)
+* [MERL - Mitsubishi Electric Research Laboratories &raquo;](http://www.merl.com/research/multimedia )
 
 ### Researchers
 
