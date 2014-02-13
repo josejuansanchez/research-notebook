@@ -1,6 +1,9 @@
 HTTP Adaptive Streaming
 =======================
 
+* [HTTP Adaptive Streaming: Principles, Ongoing Research and Standards &raquo;](http://www.employees.org/~acbegen/files/HAS_Tutorial_ICME_2013_Begen_Stockhammer.pdf) ICME 2013. Ali C. Begen and  Thomas Stockhammer.
+
+
 ### MPEG-DASH
 
 * [MPEG-DASH: The Standard for Multimedia Streaming Over Internet &raquo;](http://mpeg.chiariglione.org/standards/mpeg-dash)
