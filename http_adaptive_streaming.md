@@ -8,4 +8,7 @@ HTTP Adaptive Streaming
  
 With the increase of Internet bandwidth and the tremendous growth of the World Wide Web, the value of delivering audio or video data in small packets has diminished. Multimedia content can now be delivered efficiently in larger segments using HTTP.
 
+### DASH-AVC/264
+
 * [DASH Industry Forum &raquo;](http://dashif.org)
+DASH-IF believes that DASH-AVC/264 supports the Internet streaming main use cases better than any existing proprietary solution.
