@@ -12,3 +12,5 @@ Low-Rate Video Transmission
 Video Surveillance  
 Intereactive Video Delivery  
 Simulcast
+HTTP streaming
+
