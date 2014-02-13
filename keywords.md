@@ -11,7 +11,7 @@ Semantic Based Coding
 Low-Rate Video Transmission  
 Video Surveillance  
 Intereactive Video Delivery  
-Simulcast
+Simulcast  
 HTTP streaming  
 Adaptive Bitrate Streaming
 
