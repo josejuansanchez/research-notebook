@@ -8,4 +8,5 @@ Video Coding
 ### MPEG-DASH
 
 * [MPEG-DASH: The Standard for Multimedia Streaming Over Internet &raquo;](http://mpeg.chiariglione.org/standards/mpeg-dash)
+* [MPEG's Dynamic Adaptive Streaming over HTTP (DASH) – Enabling Formats for Video Streaming over the Open Internet &raquo;](https://tech.ebu.ch/docs/events/webinar043-mpeg-dash/presentations/ebu_mpeg-dash_webinar043.pdf)
 
