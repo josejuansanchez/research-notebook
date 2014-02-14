@@ -1,4 +1,4 @@
-HTTP Live Streaming
-===================
+HTTP Live Streaming (HLS)
+=========================
 
-* [HTTP Live Streaming &raquo;](http://en.wikipedia.org/wiki/HTTP_Live_Streaming) (also known as **HLS**) .
+* [HTTP Live Streaming &raquo;](http://en.wikipedia.org/wiki/HTTP_Live_Streaming)
