@@ -17,3 +17,9 @@ $ cat images/*.ppm | ppmtoy4m > video.yuv
 ```
 $ y4mtoppm < video_input.y4m | pnmsplit - "%d.ppm"
 ```
+
+* How to invert screen colors in GNU/Linux distros
+ 
+```
+xcalib -i -a
+```
