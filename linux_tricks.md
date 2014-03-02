@@ -23,3 +23,9 @@ $ y4mtoppm < video_input.y4m | pnmsplit - "%d.ppm"
 ```
 xcalib -i -a
 ```
+
+* How to use ```sshfs``` to mount remote file systems over SSH 
+
+```
+ssh user@xxx.xxx.xxx.xxx:/remote_dir /local_dir
+```
