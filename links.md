@@ -14,6 +14,7 @@
   * [Leanpub: Publish Early, Publish Often &raquo;](https://leanpub.com)
   * [MathJax: An open source JavaScript display engine for mathematics that works in all browsers &raquo;](http://www.mathjax.org)
   * [Online tools for researchers &raquo;](http://connectedresearchers.com/online-tools-for-researchers/)
+  * Amusement: [SCIgen - An Automatic CS Paper Generator &raquo;](http://pdos.csail.mit.edu/scigen/)
 
 ### Links about Imaging
 
