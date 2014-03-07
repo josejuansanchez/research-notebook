@@ -16,3 +16,5 @@ autoreconf -fiv
 ./configure --host x86_64-apple-darwin NASM=/opt/local/bin/nasm
 make
 ```
+
+NASM 2.07 or later is required for a 64-bit build on OS X.  This can be obtained from MacPorts (http://www.macports.org/).
