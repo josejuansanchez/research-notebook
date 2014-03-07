@@ -8,8 +8,8 @@ mozjpeg
 
 ### How to compile on OS X
 
-First, install 'nasm' via macports.
-Then, in a clean source dir, do this:
+First, install 'nasm' via macports.  
+Then, in a clean source dir, do this:  
 
 ```
 autoreconf -fiv
