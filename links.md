@@ -8,6 +8,7 @@
 
 ### Write good papers
   * [How to write for Technical Periodicals & Conferences](http://mc.manuscriptcentral.com/societyimages/tgrs/author_guide_interactive%20English.pdf). IEEE Authorship Series.
+  * [IEEE Editorial Style Manual](http://www.ieee.org/documents/stylemanual.pdf).
   * [Write good papers](http://lemire.me/blog/rules-to-write-a-good-research-paper/).
 
 ### Tools and Utils
