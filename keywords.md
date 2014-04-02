@@ -13,5 +13,5 @@ Video Surveillance
 Intereactive Video Delivery  
 Simulcast  
 HTTP streaming  
-Adaptive Bitrate Streaming
+Adaptive Bitrate Streaming  
 Image Fusion  
