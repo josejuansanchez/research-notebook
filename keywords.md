@@ -14,4 +14,4 @@ Intereactive Video Delivery
 Simulcast  
 HTTP streaming  
 Adaptive Bitrate Streaming
-
+Image Fusion  
