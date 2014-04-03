@@ -19,3 +19,6 @@ With the increase of Internet bandwidth and the tremendous growth of the World W
 DASH-IF believes that DASH-AVC/264 supports the Internet streaming main use cases better than any existing proprietary solution.
 * [ITEC - Dynamic Adaptive Streaming over HTTP &raquo;](http://www-itec.aau.at/dash)
 * [Bitmovin &raquo;](http://www.bitmovin.net)
+
+#### Papers
+* [Caching in HTTP Adaptive Streaming: Friend or Foe?](http://www.employees.org/~acbegen/files/ACM_NOSSDAV14_abegen.pdf).
