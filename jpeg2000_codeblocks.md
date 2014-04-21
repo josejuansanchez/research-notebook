@@ -1,5 +1,5 @@
 ### JPEG2000 codeblocks
-* [Implication of variable code block size in JPEG 2000 and its VLSI implementation](file:///home/josejuan/Downloads/9c960516d07ce29dc2.pdf). 
+* [Implication of variable code block size in JPEG 2000 and its VLSI implementation](http://www.researchgate.net/publication/229019964_Implication_of_variable_code_block_size_in_JPEG_2000_and_its_VLSI_implementation/file/9c960516d07ce29dc2.pdf). 
 
 In JPEG 2000 standard, all the code blocks within the same tile of a component need to have the same width and height 
 according to the JPEG 2000 standard. The width and height information of a code block are specified in either the 
