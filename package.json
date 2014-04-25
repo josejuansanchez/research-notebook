@@ -6,7 +6,7 @@
         "type": "git",
         "url": "https://github.com/josejuansanchez/research-notebook.git"
     },
-    "author": "José Juan Sanchez <josejuan.sanchez@gmail.com>",
+    "author": "josejuansanchez <josejuan.sanchez@gmail.com>",
     "license": "Apache 2",
     "dependencies": {},
     "devDependencies": {
