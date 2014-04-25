@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>Introduction | Research Notebook</title>
+        <title>jpeg2000_packets | Research Notebook</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,9 +13,13 @@
         <meta name="generator" content="www.gitbook.io">
 
         
+        <link rel="next" href="./jpeg2000_codeblocks.html" />
+        
+        
+        <link rel="prev" href="./jpeg2000_image_fusion.html" />
         
 
-        <meta property="og:title" content="Introduction | Research Notebook">
+        <meta property="og:title" content="jpeg2000_packets | Research Notebook">
         <meta property="og:site_name" content="Research Notebook">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -38,7 +42,7 @@
 
 
         
-    <div class="book" data-github="josejuansanchez/research-notebook" data-level="0" data-basepath="." data-revision="1398425290618">
+    <div class="book" data-github="josejuansanchez/research-notebook" data-level="2.2" data-basepath="." data-revision="1398425290618">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -101,7 +105,7 @@
             <a href="https://github.com/josejuansanchez/research-notebook/issues" target="blank">Questions and Issues</a>
         </li>
         <li>
-            <a href="https://github.com/josejuansanchez/research-notebook/edit/master/README.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/josejuansanchez/research-notebook/edit/master/jpeg2000_packets.md" target="blank">Edit and Contribute</a>
         </li>
         <li class="divider"></li>
         
@@ -205,25 +209,25 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 0%;min-width: 0%;"></div>
+        <div class="inner" style="width: 77.77777777777777%;min-width: 66.66666666666667%;"></div>
     </div>
     <div class="chapters">
     
         <a href="./index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
     
-        <a href="./http_adaptive_streaming.html" title="http_adaptive_streaming" class="chapter  " data-progress="1.1" style="left: 11.11111111111111%;"></a>
+        <a href="./http_adaptive_streaming.html" title="http_adaptive_streaming" class="chapter done " data-progress="1.1" style="left: 11.11111111111111%;"></a>
     
-        <a href="./http_dynamic_streaming.html" title="http_dynamic_streaming" class="chapter  " data-progress="1.2" style="left: 22.22222222222222%;"></a>
+        <a href="./http_dynamic_streaming.html" title="http_dynamic_streaming" class="chapter done " data-progress="1.2" style="left: 22.22222222222222%;"></a>
     
-        <a href="./http_live_streaming.html" title="http_live_streaming" class="chapter  " data-progress="1.3" style="left: 33.333333333333336%;"></a>
+        <a href="./http_live_streaming.html" title="http_live_streaming" class="chapter done " data-progress="1.3" style="left: 33.333333333333336%;"></a>
     
-        <a href="./http_smooth_streaming.html" title="http_smooth_streaming" class="chapter  " data-progress="1.4" style="left: 44.44444444444444%;"></a>
+        <a href="./http_smooth_streaming.html" title="http_smooth_streaming" class="chapter done " data-progress="1.4" style="left: 44.44444444444444%;"></a>
     
-        <a href="./jpeg2000.html" title="JPEG2000" class="chapter  new-chapter" data-progress="2" style="left: 55.55555555555556%;"></a>
+        <a href="./jpeg2000.html" title="JPEG2000" class="chapter done new-chapter" data-progress="2" style="left: 55.55555555555556%;"></a>
     
-        <a href="./jpeg2000_image_fusion.html" title="jpeg2000_image_fusion" class="chapter  " data-progress="2.1" style="left: 66.66666666666667%;"></a>
+        <a href="./jpeg2000_image_fusion.html" title="jpeg2000_image_fusion" class="chapter done " data-progress="2.1" style="left: 66.66666666666667%;"></a>
     
-        <a href="./jpeg2000_packets.html" title="jpeg2000_packets" class="chapter  " data-progress="2.2" style="left: 77.77777777777777%;"></a>
+        <a href="./jpeg2000_packets.html" title="jpeg2000_packets" class="chapter done " data-progress="2.2" style="left: 77.77777777777777%;"></a>
     
         <a href="./jpeg2000_codeblocks.html" title="jpeg2000_codeblocks" class="chapter  " data-progress="2.3" style="left: 88.88888888888889%;"></a>
     
@@ -234,10 +238,40 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_2">
+                    <section class="normal" id="section-gitbook_14">
                     
-                        <h1 id="research-notebook">Research Notebook</h1>
-<p>Notes on my Personal Research Notebook.</p>
+                        <h2 id="jpeg2000-packet-structure">JPEG2000 Packet Structure</h2>
+<p>Example:  </p>
+<pre><code> FF 91    00 04    04 EC    C0 00 ...
+\-----/  \-----/  \-----/  \--------/
+ 16 bits  16 bits  16 bits   N bits
+
+ SOP       Lsop     Nsop     Packet Body
+</code></pre><p><strong>SOP</strong>: Start Of Packet marker.<br><strong>Lsop</strong>: Length of marker segment in bytes (Not including the marker).<br><strong>Nsop</strong>: Packet number (Possible values are between 0 and 65535).  </p>
+<h3 id="warning-">Warning!</h3>
+<hr>
+<ul>
+<li><p><strong>SOP marker</strong><br>Be careful when you are going to search the SOP marker in a JPEG2000 code-stream.<br>If you only looking for <code>0xFF91</code> values, you can get an erroneous result.  </p>
+<p>Example:  </p>
+</li>
+</ul>
+<pre><code> FF 91    00 04    00 FF    91 40 ...
+\-----/  \-----/  \-----/  \--------/
+ 16 bits  16 bits  16 bits   N bits
+
+ SOP       Lsop     Nsop     Packet Body
+</code></pre><p>The last byte of <strong>Nsop</strong> and the first byte of <strong>Packet body</strong> form a <code>0xFF91</code> value that could result in an erroneous interpretation.  </p>
+<ul>
+<li><p><strong>EOC marker</strong><br>Be careful when you are going to search the SOP marker in a JPEG2000 code-stream.<br>If you only looking for <code>0xFFD9</code> values, you can get an erroneous result.  </p>
+<p>Example:  </p>
+</li>
+</ul>
+<pre><code> FF 91    00 04    01 FF    D9 ...
+\-----/  \-----/  \-----/  \--------/
+ 16 bits  16 bits  16 bits   N bits
+
+ SOP       Lsop     Nsop     Packet Body
+</code></pre><p>The last byte of <strong>Nsop</strong> and the first byte of <strong>Packet body</strong> form a <code>0xFFD9</code> value that could result in an erroneous interpretation.  </p>
 
                     
                     </section>
@@ -247,6 +281,10 @@
         </div>
 
         
+        <a href="./jpeg2000_image_fusion.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./jpeg2000_codeblocks.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
