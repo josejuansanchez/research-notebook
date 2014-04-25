@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>HTTP dynamic streaming | Research Notebook</title>
+        <title>Rate distortion | Research Notebook</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,11 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../http_streaming/http_live_streaming.html" />
         
-        
-        <link rel="prev" href="../http_streaming/http_adaptive_streaming.html" />
+        <link rel="prev" href="../quality_metrics/structural_similarity_ssim.html" />
         
 
-        <meta property="og:title" content="HTTP dynamic streaming | Research Notebook">
+        <meta property="og:title" content="Rate distortion | Research Notebook">
         <meta property="og:site_name" content="Research Notebook">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -42,7 +40,7 @@
 
 
         
-    <div class="book" data-github="josejuansanchez/research-notebook" data-level="1.2" data-basepath=".." data-revision="1398469082919">
+    <div class="book" data-github="josejuansanchez/research-notebook" data-level="5" data-basepath=".." data-revision="1398469082919">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -105,7 +103,7 @@
             <a href="https://github.com/josejuansanchez/research-notebook/issues" target="blank">Questions and Issues</a>
         </li>
         <li>
-            <a href="https://github.com/josejuansanchez/research-notebook/edit/master/http_streaming/http_dynamic_streaming.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/josejuansanchez/research-notebook/edit/master/rate_distortion/rate_distortion_theory.md" target="blank">Edit and Contribute</a>
         </li>
         <li class="divider"></li>
         
@@ -268,7 +266,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 13.333333333333334%;min-width: 6.666666666666667%;"></div>
+        <div class="inner" style="width: 100%;min-width: 93.33333333333333%;"></div>
     </div>
     <div class="chapters">
     
@@ -278,42 +276,47 @@
     
         <a href="../http_streaming/http_dynamic_streaming.html" title="HTTP dynamic streaming" class="chapter done " data-progress="1.2" style="left: 13.333333333333334%;"></a>
     
-        <a href="../http_streaming/http_live_streaming.html" title="HTTP live streaming" class="chapter  " data-progress="1.3" style="left: 20%;"></a>
+        <a href="../http_streaming/http_live_streaming.html" title="HTTP live streaming" class="chapter done " data-progress="1.3" style="left: 20%;"></a>
     
-        <a href="../http_streaming/http_smooth_streaming.html" title="HTTP smooth streaming" class="chapter  " data-progress="1.4" style="left: 26.666666666666668%;"></a>
+        <a href="../http_streaming/http_smooth_streaming.html" title="HTTP smooth streaming" class="chapter done " data-progress="1.4" style="left: 26.666666666666668%;"></a>
     
-        <a href="../jpeg2000/jpeg2000.html" title="JPEG2000" class="chapter  new-chapter" data-progress="2" style="left: 33.333333333333336%;"></a>
+        <a href="../jpeg2000/jpeg2000.html" title="JPEG2000" class="chapter done new-chapter" data-progress="2" style="left: 33.333333333333336%;"></a>
     
-        <a href="../jpeg2000/jpeg2000_image_fusion.html" title="Image fusion" class="chapter  " data-progress="2.1" style="left: 40%;"></a>
+        <a href="../jpeg2000/jpeg2000_image_fusion.html" title="Image fusion" class="chapter done " data-progress="2.1" style="left: 40%;"></a>
     
-        <a href="../jpeg2000/jpeg2000_packets.html" title="Packets" class="chapter  " data-progress="2.2" style="left: 46.666666666666664%;"></a>
+        <a href="../jpeg2000/jpeg2000_packets.html" title="Packets" class="chapter done " data-progress="2.2" style="left: 46.666666666666664%;"></a>
     
-        <a href="../jpeg2000/jpeg2000_codeblocks.html" title="Codeblocks" class="chapter  " data-progress="2.3" style="left: 53.333333333333336%;"></a>
+        <a href="../jpeg2000/jpeg2000_codeblocks.html" title="Codeblocks" class="chapter done " data-progress="2.3" style="left: 53.333333333333336%;"></a>
     
-        <a href="../jpeg2000/jpeg2000_cr_mc.html" title="Conditional Replenishment and Motion Compensation" class="chapter  " data-progress="2.4" style="left: 60%;"></a>
+        <a href="../jpeg2000/jpeg2000_cr_mc.html" title="Conditional Replenishment and Motion Compensation" class="chapter done " data-progress="2.4" style="left: 60%;"></a>
     
-        <a href="../knapsack/knapsack_problems.html" title="Knapsack problem" class="chapter  new-chapter" data-progress="3" style="left: 66.66666666666667%;"></a>
+        <a href="../knapsack/knapsack_problems.html" title="Knapsack problem" class="chapter done new-chapter" data-progress="3" style="left: 66.66666666666667%;"></a>
     
-        <a href="../knapsack/knapsack.c" title="knapsack.c" class="chapter  " data-progress="3.1" style="left: 73.33333333333333%;"></a>
+        <a href="../knapsack/knapsack.c" title="knapsack.c" class="chapter done " data-progress="3.1" style="left: 73.33333333333333%;"></a>
     
-        <a href="../knapsack/values.txt" title="values.txt" class="chapter  " data-progress="3.2" style="left: 80%;"></a>
+        <a href="../knapsack/values.txt" title="values.txt" class="chapter done " data-progress="3.2" style="left: 80%;"></a>
     
-        <a href="../quality_metrics/quality_metrics.html" title="Quality metrics" class="chapter  new-chapter" data-progress="4" style="left: 86.66666666666667%;"></a>
+        <a href="../quality_metrics/quality_metrics.html" title="Quality metrics" class="chapter done new-chapter" data-progress="4" style="left: 86.66666666666667%;"></a>
     
-        <a href="../quality_metrics/structural_similarity_ssim.html" title="ssim" class="chapter  " data-progress="4.1" style="left: 93.33333333333333%;"></a>
+        <a href="../quality_metrics/structural_similarity_ssim.html" title="ssim" class="chapter done " data-progress="4.1" style="left: 93.33333333333333%;"></a>
     
-        <a href="../rate_distortion/rate_distortion_theory.html" title="Rate distortion" class="chapter  new-chapter" data-progress="5" style="left: 100%;"></a>
+        <a href="../rate_distortion/rate_distortion_theory.html" title="Rate distortion" class="chapter done new-chapter" data-progress="5" style="left: 100%;"></a>
     
     </div>
 </div>
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_3">
+                    <section class="normal" id="section-gitbook_19">
                     
-                        <h1 id="http-dynamic-streaming-hds-">HTTP Dynamic Streaming (HDS)</h1>
+                        <h1 id="rate-distortion-theory">Rate Distortion Theory</h1>
 <ul>
-<li><a href="http://blog.edgecast.com/post/55198896476/hds-hls-hss-adaptive-http-streaming-demystified" target="_blank">HDS, HLS, HSS — Adaptive HTTP Streaming Demystified &raquo;</a></li>
+<li><a href="http://www.data-compression.com/theory.shtml#rd" target="_blank">Rate-Distortion Theory &raquo;</a></li>
+<li><a href="http://www.amazon.com/Rate-Distortion-Theory-Mathematical-Prentice-Hall/dp/0137531036" target="_blank">Rate Distortion Theory: Mathematical Basis for Data Compression &raquo;</a><br>Toby Berger. 1971.</li>
+<li><a href="http://sipi.usc.edu/~ortega/Papers/OrtegaRamchandran98.pdf" target="_blank">Rate-Distortion Methods for Image and Video Compression: An Overview &raquo;</a></li>
+<li><a href="http://tiger.ire.pw.edu.pl/LTM/ludzie/gp/publications/rate_control_survey.pdf" target="_blank">Rate-Control techniques in the last visual compression standards. A Survey &raquo;</a></li>
+<li><a href="http://www.img.lx.it.pt/~fp/cav/Additional_material/RD%20Optimization%20for%20Video%20Compression.pdf" target="_blank">Rate-Distortion Optimization for Video Compression &raquo;</a></li>
+<li><a href="http://www.hhi.fraunhofer.de/fields-of-competence/image-processing/research-groups/image-video-coding/rate-distortion-optimization-rdo-for-encoder-control.html" target="_blank">Rate-Distortion Optimization (RDO) for Encoder Control &raquo;</a></li>
 </ul>
 
                     
@@ -324,10 +327,8 @@
         </div>
 
         
-        <a href="../http_streaming/http_adaptive_streaming.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../quality_metrics/structural_similarity_ssim.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../http_streaming/http_live_streaming.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
