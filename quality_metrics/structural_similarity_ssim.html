@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>JPEG2000 | Research Notebook</title>
+        <title>ssim | Research Notebook</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,11 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../jpeg2000/jpeg2000_image_fusion.html" />
         
-        
-        <link rel="prev" href="../http_streaming/http_smooth_streaming.html" />
+        <link rel="prev" href="../quality_metrics/quality_metrics.html" />
         
 
-        <meta property="og:title" content="JPEG2000 | Research Notebook">
+        <meta property="og:title" content="ssim | Research Notebook">
         <meta property="og:site_name" content="Research Notebook">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -42,7 +40,7 @@
 
 
         
-    <div class="book" data-github="josejuansanchez/research-notebook" data-level="2" data-basepath=".." data-revision="1398468379856">
+    <div class="book" data-github="josejuansanchez/research-notebook" data-level="4.1" data-basepath=".." data-revision="1398468379856">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -105,7 +103,7 @@
             <a href="https://github.com/josejuansanchez/research-notebook/issues" target="blank">Questions and Issues</a>
         </li>
         <li>
-            <a href="https://github.com/josejuansanchez/research-notebook/edit/master/jpeg2000/jpeg2000.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/josejuansanchez/research-notebook/edit/master/quality_metrics/structural_similarity_ssim.md" target="blank">Edit and Contribute</a>
         </li>
         <li class="divider"></li>
         
@@ -259,7 +257,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 35.714285714285715%;min-width: 28.571428571428573%;"></div>
+        <div class="inner" style="width: 100%;min-width: 92.85714285714286%;"></div>
     </div>
     <div class="chapters">
     
@@ -275,85 +273,55 @@
     
         <a href="../jpeg2000/jpeg2000.html" title="JPEG2000" class="chapter done new-chapter" data-progress="2" style="left: 35.714285714285715%;"></a>
     
-        <a href="../jpeg2000/jpeg2000_image_fusion.html" title="Image fusion" class="chapter  " data-progress="2.1" style="left: 42.857142857142854%;"></a>
+        <a href="../jpeg2000/jpeg2000_image_fusion.html" title="Image fusion" class="chapter done " data-progress="2.1" style="left: 42.857142857142854%;"></a>
     
-        <a href="../jpeg2000/jpeg2000_packets.html" title="Packets" class="chapter  " data-progress="2.2" style="left: 50%;"></a>
+        <a href="../jpeg2000/jpeg2000_packets.html" title="Packets" class="chapter done " data-progress="2.2" style="left: 50%;"></a>
     
-        <a href="../jpeg2000/jpeg2000_codeblocks.html" title="Codeblocks" class="chapter  " data-progress="2.3" style="left: 57.142857142857146%;"></a>
+        <a href="../jpeg2000/jpeg2000_codeblocks.html" title="Codeblocks" class="chapter done " data-progress="2.3" style="left: 57.142857142857146%;"></a>
     
-        <a href="../jpeg2000/jpeg2000_cr_mc.html" title="Conditional Replenishment and Motion Compensation" class="chapter  " data-progress="2.4" style="left: 64.28571428571429%;"></a>
+        <a href="../jpeg2000/jpeg2000_cr_mc.html" title="Conditional Replenishment and Motion Compensation" class="chapter done " data-progress="2.4" style="left: 64.28571428571429%;"></a>
     
-        <a href="../knapsack/knapsack_problems.html" title="Knapsack problem" class="chapter  new-chapter" data-progress="3" style="left: 71.42857142857143%;"></a>
+        <a href="../knapsack/knapsack_problems.html" title="Knapsack problem" class="chapter done new-chapter" data-progress="3" style="left: 71.42857142857143%;"></a>
     
-        <a href="../knapsack/knapsack.c" title="knapsack.c" class="chapter  " data-progress="3.1" style="left: 78.57142857142857%;"></a>
+        <a href="../knapsack/knapsack.c" title="knapsack.c" class="chapter done " data-progress="3.1" style="left: 78.57142857142857%;"></a>
     
-        <a href="../knapsack/values.txt" title="values.txt" class="chapter  " data-progress="3.2" style="left: 85.71428571428571%;"></a>
+        <a href="../knapsack/values.txt" title="values.txt" class="chapter done " data-progress="3.2" style="left: 85.71428571428571%;"></a>
     
-        <a href="../quality_metrics/quality_metrics.html" title="Quality metrics" class="chapter  new-chapter" data-progress="4" style="left: 92.85714285714286%;"></a>
+        <a href="../quality_metrics/quality_metrics.html" title="Quality metrics" class="chapter done new-chapter" data-progress="4" style="left: 92.85714285714286%;"></a>
     
-        <a href="../quality_metrics/structural_similarity_ssim.html" title="ssim" class="chapter  " data-progress="4.1" style="left: 100%;"></a>
+        <a href="../quality_metrics/structural_similarity_ssim.html" title="ssim" class="chapter done " data-progress="4.1" style="left: 100%;"></a>
     
     </div>
 </div>
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_6">
+                    <section class="normal" id="section-gitbook_18">
                     
-                        <h2 id="jpeg2000">JPEG2000</h2>
-<h3 id="docs">Docs</h3>
+                        <h2 id="structural-similarity-index-metric-ssim-">Structural SIMilarity Index Metric (SSIM)</h2>
+<ol>
+<li><p><a href="http://www.cns.nyu.edu/~lcv/ssim/" target="_blank">The SSIM Index for Image Quality Assessment</a>.<br><a href="http://www.ece.uwaterloo.ca/~z70wang/" target="_blank">Zhou Wang</a>, <a href="http://live.ece.utexas.edu/people/bovik/" target="_blank">Alan C. Bovik</a>, <a href="http://live.ece.utexas.edu/People/people_detail.php?id=92" target="_blank">Hamid R. Sheikh</a> and <a href="http://www.cns.nyu.edu/~eero/" target="_blank">Eero P. Simoncelli</a>.</p>
+</li>
+<li><p><a href="http://www.cns.nyu.edu/pub/eero/wang03-reprint.pdf" target="_blank">Image Quality Assessment: From Error Visibility to Structural Similarity</a>.<br>IEEE Transactions on Image Processing, vol. 13, no. 4, Apr. 2004.</p>
+</li>
+<li><p><a href="https://ece.uwaterloo.ca/~z70wang/publications/SPM09.pdf" target="_blank">Mean squared error: love it or leave it? - A new look at signal fidelity measures</a>.<br>IEEE Signal Processing Magazine, vol. 26, no. 1, pp. 98-117, Jan. 2009.</p>
+</li>
+<li><p><a href="http://www.ijcst.com/vol23/1/sasivarnan.pdf" target="_blank">Image Quality Assessment Techniques on Spatial Domain</a>.<br>IJCSt Vol. 2, ISSue 3, September 2011.<br>Note: &quot;SSIM is widely used method for measurement of image quality. It works accurately can measure better across distortion types as compared to MSE and PSNR, but <strong>fails in case of highly blurred image</strong>.&quot;</p>
+</li>
+<li><p><a href="https://ece.uwaterloo.ca/~z70wang/research/iwssim/" target="_blank">IW-SSIM: Information Content Weighted Structural Similarity Index for Image Quality Assessment</a>.<br>Zhou Wang and Qiang Li, &quot;Information Content Weighting for Perceptual Image Quality Assessment,&quot; IEEE Transactions on Image Processing, vol. 20, no. 5, pp. 1185-1198, May 2011.</p>
+</li>
+<li><p><a href="http://www.ponomarenko.info/psnrhvsm.htm" target="_blank">Nikolay Ponomarenko homepage - PSNR-HVS-M download page</a>.<br>Nikolay Ponomarenko, Flavia Silvestri, Karen Egiazarian, Marco Carli, Jaakko Astola, Vladimir Lukin, On between-coefficient contrast masking of DCT basis functions, CD-ROM Proceedings of the Third International Workshop on Video Processing and Quality Metrics for Consumer Electronics VPQM-07, Scottsdale, Arizona, USA, 25-26 January, 2007, 4 p.</p>
+</li>
+</ol>
+<h2 id="tools">Tools</h2>
+<h3 id="ssim-structural-similarity-">SSIM (Structural Similarity)</h3>
 <ul>
-<li><a href="https://docs.google.com/file/d/0BwOt1OAFwvdVbWNmdU5UTzFWTnc/edit?usp=sharing" target="_blank">JPEG2000 Core Coding System &raquo;</a></li>
-<li><a href="http://www.jpeg.org/jpeg2000/CDs15444.html" target="_blank">Committe Drafts &raquo;</a></li>
-<li><a href="http://www.jpeg.org/.demo/FAQJpeg2k/index.htm" target="_blank">JPEG2000 FAQ &raquo;</a></li>
+<li><a href="https://github.com/josejuansanchez/ssim" target="_blank">SSIM Matlab/Octave implementation</a>.</li>
 </ul>
-<h4 id="kakadu">Kakadu</h4>
+<h3 id="dssim-structural-dissimilarity-">DSSIM (Structural Dissimilarity)</h3>
 <ul>
-<li><a href="http://tech.groups.yahoo.com/group/kakadu_jpeg2000/messages/6164?xm=1&amp;o=1&amp;l=1" target="_blank">Kakadu JPEG2000 Discussion Group &raquo;</a></li>
-<li><a href="http://www.kakadusoftware.com/documents/Kakadu.pdf" target="_blank">Kakadu Introductory Survey Document &raquo;</a></li>
-<li><a href="http://www.kakadusoftware.com/documents/Usage_Examples.txt" target="_blank">Standard <em>Usage Examples</em> for Kakadu demo applications &raquo;</a></li>
-<li><a href="http://pirlwww.lpl.arizona.edu/resources/guide/software/Kakadu/" target="_blank">Kakadu JPEG2000 image compression/decompression interface docs &raquo;</a></li>
-</ul>
-<h3 id="jpip">JPIP</h3>
-<ul>
-<li><a href="https://docs.google.com/file/d/0BwOt1OAFwvdVV1ZUNE1reUxRVUE/edit?usp=sharing" target="_blank">ESA JPIP Server Documentation &raquo;</a></li>
-<li><a href="https://docs.google.com/file/d/0BwOt1OAFwvdVVzdVTTNZQkJqYjQ/edit?usp=sharing|Information technology" target="_blank">JPEG 2000 image coding system: Interactivity tools, APIs and protocols &raquo;</a>. ITU-T  Recommendation  T.808.</li>
-</ul>
-<h3 id="open-source-projects">Open Source Projects</h3>
-<ul>
-<li><a href="https://launchpad.net/esajpip" target="_blank">ESA JPIP Server &raquo;</a></li>
-<li><a href="https://launchpad.net/jhelioviewer" target="_blank">JHelioviewer &raquo;</a>. A visualization tool for solar physics data.</li>
-<li><a href="http://www.openjpeg.org" target="_blank">OpenJPEG &raquo;</a>. The OpenJPEG library is an open-source JPEG 2000 codec written in C language.</li>
-<li><a href="http://www.ece.uvic.ca/~frodo/jasper/" target="_blank">JasPer: A JPEG-2000 Codec Implementation &raquo;</a></li>
-<li><a href="https://github.com/search?q=jpeg2000" target="_blank">Projects about JPEG2000 in GitHub &raquo;</a></li>
-<li><a href="https://www.npmjs.org/package/openjpeg" target="_blank">A npm package Port of OpenJPEG</a>, an open-source JPEG2000 codec, to JavaScript using Emscripten.</li>
-</ul>
-<h3 id="references">References</h3>
-<ul>
-<li><a href="http://www.engineering.unsw.edu.au/electrical-engineering/staff/david-taubman" target="_blank">David Taubman &raquo;</a>. Telecommunications Research Group. UNSW Australia. </li>
-<li><a href="http://dstn.ee.unsw.edu.au/~aous/" target="_blank">Aous Thabit Naman &raquo;</a> The University of New South Wales, Kensington, Australia.</li>
-<li><a href="http://www.ece.uvic.ca/~frodo/index.html" target="_blank">Michael Adams &raquo;</a>. Department of Electrical and Computer Engineering. University of Victoria.</li>
-<li><a href="http://www.informatik.uni-rostock.de/~sanction/" target="_blank">Rene&#39; Rosenbaum &raquo;</a>. University of Rostock: Institute for Computergraphics.</li>
-</ul>
-<h3 id="resources">Resources</h3>
-<ul>
-<li><a href="http://www.digitizationguidelines.gov/resources/jpeg2000.html" target="_blank">JPEG 2000 Summit Workshop &raquo;</a></li>
-<li><a href="http://www.digitizationguidelines.gov/still-image/documents/JP2LossyCompression.pdf" target="_blank">Using Lossy JPEG 2000 Compression For Archival Master Files &raquo;</a></li>
-</ul>
-<h3 id="papers">Papers</h3>
-<ul>
-<li><a href="http://www.informatik.uni-rostock.de/~sanction/publications/Rosenbaum-VIIP04b.pdf" target="_blank">Limited spatial access in JPEG2000 for remote image editing &raquo;</a> René Rosenbaum.</li>
-<li><a href="http://vcg.informatik.uni-rostock.de/~sanction/publications/Rosenbaum-ICIP02.pdf" target="_blank">Flexible, dynamic and compliant region of interest coding in JPEG2000 &raquo;</a> René Rosenbaum.</li>
-</ul>
-<h3 id="books">Books</h3>
-<ul>
-<li><a href="http://books.google.es/books?id=4eOnNwXah7EC&amp;printsec=frontcover&amp;hl=es&amp;output=html_text" target="_blank">The JPEG 2000 Suite &raquo;</a></li>
-</ul>
-<h3 id="thesis">Thesis</h3>
-<ul>
-<li><a href="http://vcg.informatik.uni-rostock.de/~sanction/publications/Rosenbaum-PhD.pdf" target="_blank">Mobile Image Communication using JPEG2000 &raquo;</a> René Rosenbaum.</li>
-<li><a href="http://www.hpca.ual.es/~vruiz/papers/JPtesis.pdf" target="_blank">Interactive Browsing of Remote JPEG 2000 Images</a>. Juan Pablo García Ortiz. PhD thesis, Escuela Superior de Ingenería, Universidad de Almería, 2012.</li>
-<li><a href="http://www.aldebaran.cz/~hofmanj/diplom/thesis.pdf" target="_blank">Codeblock optimizacion of JPEG2000 based codec &raquo;</a> Jiri Hoffman, 2005.</li>
+<li><a href="https://github.com/pornel/dssim" target="_blank">DSSIM C implementation</a>.
+This tool computes (<strong>dis</strong>)similarity between two <strong>PNG</strong> images using algorithms approximating human vision. <a href="http://pornel.net/dssim" target="_blank">More info</a>.</li>
 </ul>
 
                     
@@ -364,10 +332,8 @@
         </div>
 
         
-        <a href="../http_streaming/http_smooth_streaming.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../quality_metrics/quality_metrics.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../jpeg2000/jpeg2000_image_fusion.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
