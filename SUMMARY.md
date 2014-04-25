@@ -1,10 +1,10 @@
 # Research Notebook
 
-* streaming
-  * [http_adaptive_streaming](http_adaptive_streaming.md)
-  * [http_dynamic_streaming](http_dynamic_streaming.md)
-  * [http_live_streaming](http_live_streaming.md)
-  * [http_smooth_streaming](http_smooth_streaming.md)
+* HTTP streaming
+  * [HTTP adaptive streaming](http_streaming/http_adaptive_streaming.md)
+  * [HTTP dynamic streaming](http_streaming/http_dynamic_streaming.md)
+  * [HTTP live streaming](http_streaming/http_live_streaming.md)
+  * [HTTP smooth streaming](http_streaming/http_smooth_streaming.md)
 * [JPEG2000](jpeg2000.md)
   * [jpeg2000_image_fusion](jpeg2000_image_fusion.md)
   * [jpeg2000_packets](jpeg2000_packets.md)
