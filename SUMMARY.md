@@ -10,3 +10,8 @@
   * [Packets](jpeg2000/jpeg2000_packets.md)
   * [Codeblocks](jpeg2000/jpeg2000_codeblocks.md)
   * [Conditional Replenishment and Motion Compensation](jpeg2000/jpeg2000_cr_mc.md)
+* [Knapsack problem](knapsack/knapsack_problems.md)
+  * [knapsack.c](knapsack/knapsack.c)
+  * [values.txt](knapsack/values.txt)  
+* [Quality metrics](quality_metrics/quality_metrics.md)
+  * [ssim](quality_metrics/structural_similarity_ssim.md)
