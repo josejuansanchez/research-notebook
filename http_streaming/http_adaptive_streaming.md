@@ -1,11 +1,14 @@
 HTTP Adaptive Streaming
 =======================
 
+* [Adaptive bitrate streaming](http://en.wikipedia.org/wiki/Adaptive_bitrate_streaming) from Wikipedia.
 * [HTTP Adaptive Streaming: Principles, Ongoing Research and Standards &raquo;](http://www.employees.org/~acbegen/files/HAS_Tutorial_ICME_2013_Begen_Stockhammer.pdf) ICME 2013. Ali C. Begen and  Thomas Stockhammer.
 * [Adaptive Streaming for You and YouTube. Google I/O 2013 &raquo;](https://developers.google.com/events/io/sessions/328181796)
 
 
 ### MPEG-DASH
+
+MPEG-DASH is the only adaptive bit-rate HTTP-based streaming solution that is an international standard.
 
 * [MPEG-DASH: The Standard for Multimedia Streaming Over Internet &raquo;](http://mpeg.chiariglione.org/standards/mpeg-dash)
 * [MPEG's Dynamic Adaptive Streaming over HTTP (DASH) – Enabling Formats for Video Streaming over the Open Internet &raquo;](https://tech.ebu.ch/docs/events/webinar043-mpeg-dash/presentations/ebu_mpeg-dash_webinar043.pdf)
