@@ -5,6 +5,9 @@ Review:
 * [International Image Interoperability Framework (iiif)](http://iiif.io)
 * [diva.js](http://ddmal.music.mcgill.ca/diva/)
 * [OpenSeadragon](http://openseadragon.github.io/)
+* http://libimages.princeton.edu/
+* http://libimages.princeton.edu/osd-demo/
+* [Loris IIIF Image Server](https://github.com/pulibrary/loris)
 * [zoom.it](http://zoom.it)
 
 Projects:
