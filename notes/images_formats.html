@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>ssim | Research Notebook</title>
+        <title>Images Formats | Research Notebook</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,11 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../rate_distortion/rate_distortion_theory.html" />
+        <link rel="next" href="../notes/code_style_guidelines.html" />
         
-        
-        <link rel="prev" href="../quality_metrics/quality_metrics.html" />
         
 
-        <meta property="og:title" content="ssim | Research Notebook">
+        <meta property="og:title" content="Images Formats | Research Notebook">
         <meta property="og:site_name" content="Research Notebook">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -42,7 +40,7 @@
 
 
         
-    <div class="book" data-github="josejuansanchez/research-notebook" data-level="4.1" data-basepath=".." data-revision="1399288354634">
+    <div class="book" data-github="josejuansanchez/research-notebook" data-level="8.1" data-basepath=".." data-revision="1399288354634">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -105,7 +103,7 @@
             <a href="https://github.com/josejuansanchez/research-notebook/issues" target="blank">Questions and Issues</a>
         </li>
         <li>
-            <a href="https://github.com/josejuansanchez/research-notebook/edit/master/quality_metrics/structural_similarity_ssim.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/josejuansanchez/research-notebook/edit/master/notes/images_formats.md" target="blank">Edit and Contribute</a>
         </li>
         <li class="divider"></li>
         
@@ -461,7 +459,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 59.45945945945946%;min-width: 56.75675675675676%;"></div>
+        <div class="inner" style="width: 81.08108108108108%;min-width: 78.37837837837837%;"></div>
     </div>
     <div class="chapters">
     
@@ -511,21 +509,21 @@
     
         <a href="../quality_metrics/structural_similarity_ssim.html" title="ssim" class="chapter done " data-progress="4.1" style="left: 59.45945945945946%;"></a>
     
-        <a href="../rate_distortion/rate_distortion_theory.html" title="Rate distortion" class="chapter  new-chapter" data-progress="5" style="left: 62.16216216216216%;"></a>
+        <a href="../rate_distortion/rate_distortion_theory.html" title="Rate distortion" class="chapter done new-chapter" data-progress="5" style="left: 62.16216216216216%;"></a>
     
-        <a href="../video_coding/video_coding.html" title="Video coding" class="chapter  new-chapter" data-progress="6" style="left: 64.86486486486487%;"></a>
+        <a href="../video_coding/video_coding.html" title="Video coding" class="chapter done new-chapter" data-progress="6" style="left: 64.86486486486487%;"></a>
     
-        <a href="../video_coding/codec_formats.html" title="Codec formats" class="chapter  " data-progress="6.1" style="left: 67.56756756756756%;"></a>
+        <a href="../video_coding/codec_formats.html" title="Codec formats" class="chapter done " data-progress="6.1" style="left: 67.56756756756756%;"></a>
     
-        <a href="../video_coding/h265.html" title="h265" class="chapter  " data-progress="6.2" style="left: 70.27027027027027%;"></a>
+        <a href="../video_coding/h265.html" title="h265" class="chapter done " data-progress="6.2" style="left: 70.27027027027027%;"></a>
     
-        <a href="../video_coding/daala.html" title="daala" class="chapter  " data-progress="6.3" style="left: 72.97297297297297%;"></a>
+        <a href="../video_coding/daala.html" title="daala" class="chapter done " data-progress="6.3" style="left: 72.97297297297297%;"></a>
     
-        <a href="../video_coding/gstreamer.html" title="gstreamer" class="chapter  " data-progress="6.4" style="left: 75.67567567567568%;"></a>
+        <a href="../video_coding/gstreamer.html" title="gstreamer" class="chapter done " data-progress="6.4" style="left: 75.67567567567568%;"></a>
     
-        <a href="../data_compression/data_compression.html" title="Data compression" class="chapter  new-chapter" data-progress="7" style="left: 78.37837837837837%;"></a>
+        <a href="../data_compression/data_compression.html" title="Data compression" class="chapter done new-chapter" data-progress="7" style="left: 78.37837837837837%;"></a>
     
-        <a href="../notes/images_formats.html" title="Images Formats" class="chapter  " data-progress="8.1" style="left: 81.08108108108108%;"></a>
+        <a href="../notes/images_formats.html" title="Images Formats" class="chapter done " data-progress="8.1" style="left: 81.08108108108108%;"></a>
     
         <a href="../notes/code_style_guidelines.html" title="Code style guidelines" class="chapter  " data-progress="8.2" style="left: 83.78378378378379%;"></a>
     
@@ -546,32 +544,11 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_35">
+                    <section class="normal" id="section-gitbook_27">
                     
-                        <h2 id="structural-similarity-index-metric-ssim-">Structural SIMilarity Index Metric (SSIM)</h2>
-<ol>
-<li><p><a href="http://www.cns.nyu.edu/~lcv/ssim/" target="_blank">The SSIM Index for Image Quality Assessment</a>.<br><a href="http://www.ece.uwaterloo.ca/~z70wang/" target="_blank">Zhou Wang</a>, <a href="http://live.ece.utexas.edu/people/bovik/" target="_blank">Alan C. Bovik</a>, <a href="http://live.ece.utexas.edu/People/people_detail.php?id=92" target="_blank">Hamid R. Sheikh</a> and <a href="http://www.cns.nyu.edu/~eero/" target="_blank">Eero P. Simoncelli</a>.</p>
-</li>
-<li><p><a href="http://www.cns.nyu.edu/pub/eero/wang03-reprint.pdf" target="_blank">Image Quality Assessment: From Error Visibility to Structural Similarity</a>.<br>IEEE Transactions on Image Processing, vol. 13, no. 4, Apr. 2004.</p>
-</li>
-<li><p><a href="https://ece.uwaterloo.ca/~z70wang/publications/SPM09.pdf" target="_blank">Mean squared error: love it or leave it? - A new look at signal fidelity measures</a>.<br>IEEE Signal Processing Magazine, vol. 26, no. 1, pp. 98-117, Jan. 2009.</p>
-</li>
-<li><p><a href="http://www.ijcst.com/vol23/1/sasivarnan.pdf" target="_blank">Image Quality Assessment Techniques on Spatial Domain</a>.<br>IJCSt Vol. 2, ISSue 3, September 2011.<br>Note: &quot;SSIM is widely used method for measurement of image quality. It works accurately can measure better across distortion types as compared to MSE and PSNR, but <strong>fails in case of highly blurred image</strong>.&quot;</p>
-</li>
-<li><p><a href="https://ece.uwaterloo.ca/~z70wang/research/iwssim/" target="_blank">IW-SSIM: Information Content Weighted Structural Similarity Index for Image Quality Assessment</a>.<br>Zhou Wang and Qiang Li, &quot;Information Content Weighting for Perceptual Image Quality Assessment,&quot; IEEE Transactions on Image Processing, vol. 20, no. 5, pp. 1185-1198, May 2011.</p>
-</li>
-<li><p><a href="http://www.ponomarenko.info/psnrhvsm.htm" target="_blank">Nikolay Ponomarenko homepage - PSNR-HVS-M download page</a>.<br>Nikolay Ponomarenko, Flavia Silvestri, Karen Egiazarian, Marco Carli, Jaakko Astola, Vladimir Lukin, On between-coefficient contrast masking of DCT basis functions, CD-ROM Proceedings of the Third International Workshop on Video Processing and Quality Metrics for Consumer Electronics VPQM-07, Scottsdale, Arizona, USA, 25-26 January, 2007, 4 p.</p>
-</li>
-</ol>
-<h2 id="tools">Tools</h2>
-<h3 id="ssim-structural-similarity-">SSIM (Structural Similarity)</h3>
+                        <h2 id="images-formats">Images Formats</h2>
 <ul>
-<li><a href="https://github.com/josejuansanchez/ssim" target="_blank">SSIM Matlab/Octave implementation</a>.</li>
-</ul>
-<h3 id="dssim-structural-dissimilarity-">DSSIM (Structural Dissimilarity)</h3>
-<ul>
-<li><a href="https://github.com/pornel/dssim" target="_blank">DSSIM C implementation</a>.
-This tool computes (<strong>dis</strong>)similarity between two <strong>PNG</strong> images using algorithms approximating human vision. <a href="http://pornel.net/dssim" target="_blank">More info</a>.</li>
+<li><a href="http://msdn.microsoft.com/en-us/library/cc645077(v=vs.95" target="_blank">Deep Zoom File Format Overview</a>.aspx). The DZI (Deep Zoom Image) format is an XML specification maintained by Microsoft.</li>
 </ul>
 
                     
@@ -582,10 +559,8 @@ This tool computes (<strong>dis</strong>)similarity between two <strong>PNG</str
         </div>
 
         
-        <a href="../quality_metrics/quality_metrics.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../rate_distortion/rate_distortion_theory.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        <a href="../notes/code_style_guidelines.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
