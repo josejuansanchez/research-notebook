@@ -36,6 +36,7 @@
   * [Keyworkds](notes/keywords.md)
   * [Links](notes/links.md)
   * [Linux tricks](notes/linux_tricks.md)
+  * [Tricks](notes/tricks.md)  
   * [mozjpeg](notes/mozjpeg.md)
   * [Video sequences](notes/video_sequences.md)
   * [WebRTC](notes/webrtc.md)
