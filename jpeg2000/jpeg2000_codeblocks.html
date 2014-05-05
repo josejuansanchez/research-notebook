@@ -42,7 +42,7 @@
 
 
         
-    <div class="book" data-github="josejuansanchez/research-notebook" data-level="2.3" data-basepath=".." data-revision="1398685138527">
+    <div class="book" data-github="josejuansanchez/research-notebook" data-level="2.3" data-basepath=".." data-revision="1399284649562">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -470,6 +470,22 @@ one set of code block width and height information for an image or a tile or a c
 implication of using variable code block sizes at different DWT resolution levels instead of the fixed size code blocks 
 prescribed by JPEG 2000 standard. The simulation results show that there is no significant impact on compression 
 efficiency if one uses different code block sizes at different DWT levels compared to the fixed size code block size.</p>
+<ul>
+<li><a href="">Default code-block dimensions in kdu_compress</a></li>
+</ul>
+<h4 id="what-is-the-best-code-block-dimension-">What is the best code-block dimension?</h4>
+<p>There is no clear answer to the question of which block size is best.  64x64 gives the
+maximum coding efficiency (minimum distortion for given coded size) almost always
+with 32x32 some few percent less efficient.  64x64 usually also results in slightly
+faster processing since there are slightly less processing overheads.  </p>
+<h4 id="why-is-64x64-the-default-code-block-dimension-in-kdu_compress-">Why is 64x64 the default code-block dimension in kdu_compress?</h4>
+<p>The main reason we have always left 64x64 as the default is that it reduces the risk that
+others might blindly use 32x32 in benchmarking the compression efficiency of
+JPEG2000.</p>
+<h4 id="if-32x32-is-the-best-option-why-kdu_compress-does-not-use-32x32-as-default-block-dimensions-">If 32x32 is the best option, why kdu_compress does not use 32x32 as default block dimensions?</h4>
+<p>On the other hand, 32x32 blocks given finer granularity which leads to more efficient
+service of small windows of interest via JPIP.  Also 32x32 blocks end up requiring
+only half the processing memory during encoding or decoding.</p>
 
                     
                     </section>
