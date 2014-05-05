@@ -5,6 +5,7 @@ Review:
 * [International Image Interoperability Framework (iiif)](http://iiif.io)
 * [diva.js](http://ddmal.music.mcgill.ca/diva/)
 * [OpenSeadragon](http://openseadragon.github.io/)
+* [zoom.it](http://zoom.it)
 
 Projects:
 * [ESA JPIP Server](https://launchpad.net/esajpip)
