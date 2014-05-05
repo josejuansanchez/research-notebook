@@ -10,7 +10,7 @@ implication of using variable code block sizes at different DWT resolution level
 prescribed by JPEG 2000 standard. The simulation results show that there is no significant impact on compression 
 efficiency if one uses different code block sizes at different DWT levels compared to the fixed size code block size.
 
-* [Default code-block dimensions in kdu_compress]()
+* [Default code-block dimensions in kdu_compress](https://groups.yahoo.com/neo/groups/kakadu_jpeg2000/conversations/messages/6911)
 
 #### What is the best code-block dimension?
 
