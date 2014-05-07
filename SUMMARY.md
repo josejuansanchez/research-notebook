@@ -32,6 +32,7 @@
 * [Data compression](data_compression/data_compression.md)
 * Notes
   * [Images Formats](notes/images_formats.md)
+  * [Conferences and Journals](notes/conferences_journals.md)
   * [Code style guidelines](notes/code_style_guidelines.md)
   * [Keyworkds](notes/keywords.md)
   * [Links](notes/links.md)
