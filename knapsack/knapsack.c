@@ -5,9 +5,13 @@
 #define MAX_BYTES_SIZE 1000
 #define MIN_PSNR_VALUE 10
 #define MAX_PSNR_VALUE 50
+#define BUDGET 2700
 
 int rand_range_int(int min_n, int max_n);
 float rand_range_float(float min_n, float max_n);
+void method_1(int max_precincts, int max_quality_layers, int * ordered_list, int **weights, float **profit);
+void method_2(int max_precincts, int max_quality_layers, int * ordered_list, int **weights, float **profit);
+void method_3(int max_precincts, int * ordered_list, int **weights, float **profit, long max_ql);
 
 int main()
 {
@@ -113,6 +117,17 @@ int main()
 		printf("\n");
 	}
 
+	// Check the method 1
+	method_1(max_precincts, max_quality_layers, ordered_list, weights, profit);
+
+	// Check the method 2
+	method_2(max_precincts, max_quality_layers, ordered_list, weights, profit);
+
+	// Check the method 3
+	for(i=0; i<max_quality_layers; i++) {
+		method_3(max_precincts, ordered_list, weights, profit, i);
+	}
+
 	return 0;
 }
 
@@ -124,4 +139,113 @@ int rand_range_int(int min_n, int max_n)
 float rand_range_float(float min_n, float max_n)
 {
     return (float)rand()/RAND_MAX * (max_n - min_n) + min_n;
+}
+
+void method_1(int max_precincts, int max_quality_layers, int * ordered_list, int **weights, float **profit) {
+
+	printf("\n\n**** Method: 1 ****\n");
+
+	long sum_bytes = 0;
+	double sum_profit = 0;
+	int end = 0;
+	int i, j;
+
+	long budget = BUDGET;
+
+	for (i=0; i<max_precincts && !end; i++) {
+
+		int pos = ordered_list[i];
+
+		for(j=0; j<max_quality_layers && !end; j++) { 
+
+			if (weights[pos][j] >= budget) {
+				end = 1;
+				break;
+			}
+
+			printf("[%d][%d]\t", pos, j);
+			//printf("w[%d][%d] = %d / %f  \t", pos, j, weights[pos][j], profit[pos][j]);
+			
+			sum_profit = sum_profit + profit[pos][j];
+			sum_bytes = sum_bytes + weights[pos][j];
+			budget = budget - weights[pos][j];			
+		}
+		printf("\n");
+	}
+
+	printf("\nSum (bytes): %ld\n", sum_bytes);
+	printf("Sum (profit): %lf\n", sum_profit);
+}
+
+void method_2(int max_precincts, int max_quality_layers, int * ordered_list, int **weights, float **profit) {
+
+	printf("\n\n**** Method: 2 ****\n");
+
+	long sum_bytes = 0;
+	double sum_profit = 0;
+	int end = 0;
+	int i, j;
+
+	long budget = BUDGET;
+
+	for(j=0; j<max_quality_layers && !end; j++) { 	
+
+		for (i=0; i<max_precincts && !end; i++) {
+			int pos = ordered_list[i];
+
+			if (weights[pos][j] >= budget) {
+				end = 1;
+				break;
+			}
+
+			printf("[%d][%d]\t", pos, j);
+			//printf("w[%d][%d] = %d / %f  \n", pos, j, weights[pos][j], profit[pos][j]);
+			
+			sum_profit = sum_profit + profit[pos][j];
+			sum_bytes = sum_bytes + weights[pos][j];
+			budget = budget - weights[pos][j];
+		}
+		printf("\n");
+	}
+
+	printf("\nSum (bytes): %ld\n", sum_bytes);
+	printf("Sum (profit): %lf\n", sum_profit);
+}
+
+// max_ql: The number of the last layer that we are going to check
+//
+void method_3(int max_precincts, int * ordered_list, int **weights, float **profit, long max_ql) {
+
+	printf("\n\n**** Method: 3 \tmax_ql: %ld ****\n", max_ql);
+
+	long sum_bytes = 0;
+	double sum_profit = 0;
+	int end = 0;
+	int i, j;
+
+	long budget = BUDGET;
+
+	for (i=0; i<max_precincts && !end; i++) {
+
+		int pos = ordered_list[i];
+
+		for(j=0; j<=max_ql && !end; j++) { 
+
+			if (weights[pos][j] >= budget) {
+				end = 1;
+				break;
+			}
+
+			printf("[%d][%d]\t", pos, j);
+			//printf("w[%d][%d] = %d / %f  \t", pos, j, weights[pos][j], profit[pos][j]);
+			
+			sum_profit = sum_profit + profit[pos][j];
+			sum_bytes = sum_bytes + weights[pos][j];
+			budget = budget - weights[pos][j];			
+		}
+		printf("\n");
+	}
+
+	printf("\nSum (bytes): %ld\n", sum_bytes);
+	printf("Sum (profit): %lf\n", sum_profit);
 }
