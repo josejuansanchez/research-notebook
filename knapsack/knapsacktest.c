@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 	long budget;
 	long max_precincts;
 	int max_quality_layers;
-	int **weights;
+	long **weights;
 	double **profit;
 	long *ordered_list;
 	int i, j;
@@ -43,95 +43,79 @@ int main(int argc, char *argv[])
 	}
 
   	// Initialize random generator
-  	srand (time(NULL));
-
+  	srand (time(NULL));	
+	
 	// Allocate memory for weights
-	weights = (int **) malloc(max_precincts*(sizeof(int *)));
-	for(i=0; i<max_precincts; i++) {
-		weights[i] = (int *) malloc(max_quality_layers*(sizeof(int)));
+	if (allocate_memory_for_weights(max_precincts, max_quality_layers, &weights) <= 0) {
+		printf("Error allocating memory for weights.\n");
+		exit(1);
 	}
 
 	// Allocate memory for profit
-	profit = (double **) malloc(max_precincts*(sizeof(double *)));
-	for(i=0; i<max_precincts; i++) {
-		profit[i] = (double *) malloc(max_quality_layers*(sizeof(double)));
+	if (allocate_memory_for_profit(max_precincts, max_quality_layers, &profit) <= 0) {
+		printf("Error allocating memory for profit.\n");
+		exit(1);
 	}
 
 	// Allocate memory for ordered_list
-	ordered_list = (long *) malloc(max_precincts*(sizeof(long)));
-
-	// Initial values for weights between [0, MAX_BYTES_SIZE]
-	for(i=0; i<max_precincts; i++) {
-		for(j=0; j<max_quality_layers; j++){
-			weights[i][j] = rand_range_long(j*100, (j+1)*100);
-		}
+	if (allocate_memory_for_ordered_list(max_precincts, &ordered_list) <= 0) {
+		printf("Error allocating memory for ordered list.\n");
+		exit(1);
 	}
 
-	// Initial values for profit between [MIN_PSNR_VALUE, MAX_PSNR_VALUE]
-	for(i=0; i<max_precincts; i++) {
-		for(j=0; j<max_quality_layers; j++){
-			profit[i][j] = rand_range_double(j*10, (j+1)*10);
-		}
+	
+	// Create initial values for weights
+	if (create_file_of_weights(WEIGHTS_FILENAME, max_precincts, max_quality_layers) <=0 ) {
+		printf("Error creating the file of weights: %s\n", WEIGHTS_FILENAME);
+		exit(1);
 	}
 
-	// Initial values for the ordered list
-	for(i=0; i<max_precincts; i++) {
-		ordered_list[i] = -1;
+	// Read the values for weights (This step is for checking the values)
+	if (read_file_of_weights(WEIGHTS_FILENAME, max_precincts, max_quality_layers, weights) <= 0) {
+		printf("Error reading the file of weights: %s\n", WEIGHTS_FILENAME);
+		exit(1);		
 	}
 
-	long ne = 0;
-	while(ne<max_precincts) {
-		long id = rand_range_long(0, max_precincts - 1);
-		int found = 0;
-		for(i=0; (i<max_precincts) && (!found); i++) {
-			if (ordered_list[i] == id) {
-				found = 1;
-				break;
-			}
-		}
-		if (!found) {
-			ordered_list[ne++] = id;
-		}
+	// Create initial values for profit
+	if (create_file_of_profit(PROFIT_FILENAME, max_precincts, max_quality_layers) <= 0) {
+		printf("Error creating the file of profit: %s\n", PROFIT_FILENAME);
+		exit(1);
 	}
 
-	// Print weights values
-	if (DEBUG) print_weights_values(max_precincts, max_quality_layers, weights);
-
-	// Print profit values
-	if (DEBUG) print_profit_values(max_precincts, max_quality_layers, profit);
-
-	// Print ordered_list values
-	if (DEBUG) print_ordered_list_values(max_precincts, ordered_list);
-
-	// Print all the precincts with their weight and profit
-	if (DEBUG) print_precincts_weight_profit(max_precincts, max_quality_layers, weights, profit, ordered_list);
-
-	// Check the method 1
-	solution sol1;
-	method_1(max_precincts, max_quality_layers, budget, ordered_list, weights, profit, &sol1);
-
-	// Check the method 2
-	solution *sol2;
-
-	// Allocate memory for the array of solutions
-	sol2 = (solution *) malloc (max_quality_layers*sizeof(solution));
-
-	for(i=0; i<max_quality_layers; i++) {
-		method_2(max_precincts, max_quality_layers, budget, ordered_list, weights, profit, i, &sol2[i]);
+	// Read the values for profit (This step is for checking the values)
+	if (read_file_of_profit(PROFIT_FILENAME, max_precincts, max_quality_layers, profit) <= 0) {
+		printf("Error reading the file of profit: %s\n", PROFIT_FILENAME);
+		exit(1);
 	}
 
-	// Print the results for all the solutions
-	printf("\nSolution 1:\n###########");
-	print_solution(sol1);
-
-	printf("\nSolution 2:\n###########");
-	for(i=0; i<max_quality_layers; i++) {
-		printf("\n--- Quality Layer: %d", i);
-		print_solution(sol2[i]);
+	// Create initial values for ordered list
+	if (create_file_ordered_list(ORDERED_LIST_FILENAME, max_precincts) <= 0) {
+		printf("Error creating the file for the ordered list of precincts: %s\n", ORDERED_LIST_FILENAME);
+		exit(1);
 	}
 
-	// Find the best solution (max profit)	
-	find_best_solution(sol1, sol2, max_quality_layers);
+	// Read the values for ordered list (This step is for checking the values)
+	if (read_file_ordered_list(ORDERED_LIST_FILENAME, max_precincts, ordered_list) <= 0) {
+		printf("Error reading the file for the ordered list of precincts: %s\n", ORDERED_LIST_FILENAME);
+		exit(1);
+	}
+
+	if (DEBUG) {
+		// Print weights values
+		print_weights_values(max_precincts, max_quality_layers, weights);
+
+		// Print profit values
+		print_profit_values(max_precincts, max_quality_layers, profit);
+
+		// Print ordered_list values
+		print_ordered_list_values(max_precincts, ordered_list);
+
+		// Print all the precincts with their weight and profit
+		print_precincts_weight_profit(max_precincts, max_quality_layers, weights, profit, ordered_list);	
+	}
+
+	// Check all the methods in order to find the best solution
+	check_methods(max_precincts, max_quality_layers, budget, ordered_list, weights, profit);
 
 	return 0;
 }

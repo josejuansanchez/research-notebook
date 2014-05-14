@@ -13,7 +13,44 @@ double rand_range_double(double min_n, double max_n)
     return (double)rand()/RAND_MAX * (max_n - min_n) + min_n;
 }
 
-void method_1(long max_precincts, int max_quality_layers, long budget, long * ordered_list, int **weights, double **profit, solution *sol) {
+// Allocate memory for weights
+int allocate_memory_for_weights(long max_precincts, int max_quality_layers, long *** weights) {
+	int i;
+	*weights = NULL;
+	*weights = (long **) malloc(max_precincts*(sizeof(long *)));
+	
+	if (*weights == NULL) return -1;
+
+	for(i=0; i<max_precincts; i++) {
+		(*weights)[i] = (long *) malloc(max_quality_layers*(sizeof(long)));
+	}
+	return 1;
+}
+
+// Allocate memory for profit
+int allocate_memory_for_profit(long max_precincts, int max_quality_layers, double ***profit) {
+	int i;
+	*profit = NULL;
+	*profit = (double **) malloc(max_precincts*(sizeof(double *)));
+
+	if (*profit == NULL) return -1;
+
+	for(i=0; i<max_precincts; i++) {
+		(*profit)[i] = (double *) malloc(max_quality_layers*(sizeof(double)));
+	}
+	return 1;
+}
+
+// Allocate memory for ordered_list
+int allocate_memory_for_ordered_list(long max_precincts, long **ordered_list) {
+	*ordered_list = NULL;
+	*ordered_list = (long *) malloc(max_precincts*(sizeof(long)));
+
+	if (*ordered_list == NULL) return -1;
+	return 1;
+}
+
+void method_1(long max_precincts, int max_quality_layers, long budget, long * ordered_list, long **weights, double **profit, solution *sol) {
 
 	if (DEBUG) printf("\n\n**** Method: 1 ****\n");
 
@@ -57,7 +94,7 @@ void method_1(long max_precincts, int max_quality_layers, long budget, long * or
 
 // max_ql: The number of the last layer that we are going to check
 //
-void method_2(long max_precincts, int max_quality_layers, long budget, long * ordered_list, int **weights, double **profit, int max_ql, solution *sol) {
+void method_2(long max_precincts, int max_quality_layers, long budget, long * ordered_list, long **weights, double **profit, int max_ql, solution *sol) {
 
 	if (DEBUG) printf("\n\n**** Method: 2 \tmax_ql: %d ****\n", max_ql);
 
@@ -149,12 +186,12 @@ void find_best_solution(solution sol1, solution *sol2, int max_quality_layers) {
 }
 
 // Print weights values
-void print_weights_values(long max_precincts, int max_quality_layers, int **weights) {
+void print_weights_values(long max_precincts, int max_quality_layers, long **weights) {
 	int i, j;
 	printf("\nweights (precincts sizes in bytes): \n");
 	for(i=0; i<max_precincts; i++) {
 		for(j=0; j<max_quality_layers; j++){
-			printf(" %4d ", weights[i][j]);
+			printf(" %4ld ", weights[i][j]);
 		}
 		printf("\n");
 	}	
@@ -182,7 +219,7 @@ void print_ordered_list_values(long max_precincts, long *ordered_list) {
 }
 
 // Print all the precincts with their weight and profit
-void print_precincts_weight_profit(long max_precincts, int max_quality_layers, int **weights, double **profit, long *ordered_list) {
+void print_precincts_weight_profit(long max_precincts, int max_quality_layers, long **weights, double **profit, long *ordered_list) {
 	int i, j;
 	printf("\n\n");
 	for(i=0; i<max_precincts; i++) {
@@ -190,8 +227,156 @@ void print_precincts_weight_profit(long max_precincts, int max_quality_layers, i
 		long pos = ordered_list[i];
 
 		for(j=0; j<max_quality_layers; j++) {
-			printf("w[%ld][%d] = %d / %lf  \t", pos, j, weights[pos][j], profit[pos][j]);
+			printf("w[%ld][%d] = %ld / %lf  \t", pos, j, weights[pos][j], profit[pos][j]);
 		}
 		printf("\n");
 	}
+}
+
+// Create the file of weights 
+int create_file_of_weights(char filename[], long max_precincts, int max_quality_layers) {
+	FILE *f = fopen(filename,"w");
+	if (!f) return -1;
+
+	int i, j;
+	for(i=0; i<max_precincts; i++) {
+		for(j=0; j<max_quality_layers; j++){
+			long weight = rand_range_long(j*100, (j+1)*100);
+			fprintf(f,"%ld\n",weight);
+		}
+	}
+
+	fclose(f);
+	return 1;
+}
+
+// Read the file of weights 
+int read_file_of_weights(char filename[], long max_precincts, int max_quality_layers, long **weights) {
+	FILE *f = fopen(filename,"r");
+	if (!f) return -1;
+
+	int i, j;
+	for(i=0; i<max_precincts; i++) {
+		for(j=0; j<max_quality_layers; j++){	
+			fscanf(f, "%ld\n", &weights[i][j]);
+		}
+	}
+
+	fclose(f);
+	return 1;
+}
+
+// Create the file of profit 
+int create_file_of_profit(char filename[], long max_precincts, int max_quality_layers) {
+	FILE *f = fopen(filename,"w");
+	if (!f) return -1;
+
+	int i, j;
+	for(i=0; i<max_precincts; i++) {
+		for(j=0; j<max_quality_layers; j++){
+			double profit_value = rand_range_double(j*10, (j+1)*10);
+			fprintf(f,"%lf\n",profit_value);
+		}
+	}
+
+	fclose(f);
+	return 1;
+}
+
+// Read the file of profit 
+int read_file_of_profit(char filename[], long max_precincts, int max_quality_layers, double **profit) {
+	FILE *f = fopen(filename,"r");
+	if (!f) return -1;
+
+	int i, j;
+	for(i=0; i<max_precincts; i++) {
+		for(j=0; j<max_quality_layers; j++){
+			fscanf(f, "%lf\n", &profit[i][j]);
+		}
+	}
+
+	fclose(f);
+	return 1;
+}
+
+// Create the file with the ordered list of precincts
+int create_file_ordered_list(char filename[], long max_precincts) {
+	FILE *f = fopen(filename,"w");
+	if (!f) return -1;
+
+	long *ordered_list;
+	// Allocate memory for ordered_list
+	ordered_list = (long *) malloc(max_precincts*(sizeof(long)));
+
+	int i;
+	// Initial values for the ordered list
+	for(i=0; i<max_precincts; i++) {
+		ordered_list[i] = -1;
+	}
+
+	long ne = 0;
+	while(ne<max_precincts) {
+		long id = rand_range_long(0, max_precincts - 1);
+		int found = 0;
+		for(i=0; (i<max_precincts) && (!found); i++) {
+			if (ordered_list[i] == id) {
+				found = 1;
+				break;
+			}
+		}
+		if (!found) {
+			ordered_list[ne++] = id;
+		}
+	}
+
+	for(i=0; i<max_precincts; i++) {
+		fprintf(f, "%ld\n", ordered_list[i]);		
+	}
+
+	fclose(f);
+	return 1;
+}
+
+// Create the file with the ordered list of precincts
+int read_file_ordered_list(char filename[], long max_precincts, long *ordered_list) {
+	FILE *f = fopen(filename,"r");
+	if (!f) return -1;
+
+	int i;
+	for(i=0; i<max_precincts; i++) {
+		fscanf(f, "%ld\n", &ordered_list[i]);		
+	}
+
+	fclose(f);
+	return 1;
+}
+
+void check_methods(long max_precincts, int max_quality_layers, long budget, long *ordered_list, long **weights, double **profit) {
+	// Check the method 1
+	solution sol1;
+	method_1(max_precincts, max_quality_layers, budget, ordered_list, weights, profit, &sol1);
+
+	// Check the method 2
+	solution *sol2;
+
+	// Allocate memory for the array of solutions
+	sol2 = (solution *) malloc (max_quality_layers*sizeof(solution));
+
+	int i;
+	for(i=0; i<max_quality_layers; i++) {
+		method_2(max_precincts, max_quality_layers, budget, ordered_list, weights, profit, i, &sol2[i]);
+	}
+
+	// Print the results for all the solutions
+	printf("\nSolution 1:\n###########");
+	print_solution(sol1);
+
+	printf("\nSolution 2:\n###########");
+	for(i=0; i<max_quality_layers; i++) {
+		printf("\n--- Quality Layer: %d", i);
+		print_solution(sol2[i]);
+	}
+
+	// Find the best solution (max profit)	
+	find_best_solution(sol1, sol2, max_quality_layers);	
 }
