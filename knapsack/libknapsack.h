@@ -39,8 +39,6 @@ void print_profit_values(long max_precincts, int max_quality_layers, double **pr
 void print_ordered_list_values(long max_precincts, long *ordered_list);
 void print_precincts_weight_profit(long max_precincts, int max_quality_layers, long **weights, double **profit, long *ordered_list);
 
-
-
 // Files management
 int create_file_of_weights(char filename[], long max_precincts, int max_quality_layers);
 int read_file_of_weights(char filename[], long max_precincts, int max_quality_layers, long **weights);
