@@ -8,7 +8,6 @@ HTTP Adaptive Streaming
   * Microsoft Smooth Streaming
   * QuavStreams Adaptive Streaming over HTTP
   * upLynk
-
 * [Adaptive bitrate streaming](http://en.wikipedia.org/wiki/Adaptive_bitrate_streaming) from Wikipedia.
 * [HTTP Adaptive Streaming: Principles, Ongoing Research and Standards &raquo;](http://www.employees.org/~acbegen/files/HAS_Tutorial_ICME_2013_Begen_Stockhammer.pdf) ICME 2013. Ali C. Begen and  Thomas Stockhammer.
 * [Adaptive Streaming for You and YouTube. Google I/O 2013 &raquo;](https://developers.google.com/events/io/sessions/328181796)
