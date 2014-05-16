@@ -15,6 +15,7 @@ HTTP Adaptive Streaming
 ### MPEG-DASH
 
 MPEG-DASH is the only adaptive bit-rate HTTP-based streaming solution that is an international standard.
+The scope of the MPEG-DASH standard was limited to the Media Presentation Description (MPD) format of the manifest files as well as the segmentation standards for the server.
 
 * [MPEG-DASH: The Standard for Multimedia Streaming Over Internet &raquo;](http://mpeg.chiariglione.org/standards/mpeg-dash)
 * [MPEG's Dynamic Adaptive Streaming over HTTP (DASH) – Enabling Formats for Video Streaming over the Open Internet &raquo;](https://tech.ebu.ch/docs/events/webinar043-mpeg-dash/presentations/ebu_mpeg-dash_webinar043.pdf)
@@ -23,6 +24,8 @@ MPEG-DASH is the only adaptive bit-rate HTTP-based streaming solution that is an
 With the increase of Internet bandwidth and the tremendous growth of the World Wide Web, the value of delivering audio or video data in small packets has diminished. Multimedia content can now be delivered efficiently in larger segments using HTTP.
 
 ### DASH-AVC/264
+
+In order to help speed adoption of MPEG-DASH, the DASH Industry Forum4 proposed a reduced specification, which was limited to a single Codec (AVC/h.264) and narrowed the options available within the MPD. This specification is known as DASH-264.5 As part of the DASH Industry Forum, Digital Primates was charged with building the DASH-264 reference client.
 
 * [DASH Industry Forum &raquo;](http://dashif.org)
 DASH-IF believes that DASH-AVC/264 supports the Internet streaming main use cases better than any existing proprietary solution.
@@ -35,6 +38,9 @@ DASH-IF believes that DASH-AVC/264 supports the Internet streaming main use case
 
 #### Glossary
 * [OTT (Over the top)](http://en.wikipedia.org/wiki/Over-the-top_content)
+
+### Resources
+* [Building an Online Video Player with DASH-264](http://flippinawesome.org/2013/11/18/building-an-online-video-player-with-dash-264/#)
 
 ### Resources in Spanish
 * [DASH: Un estándar MPEG para streaming sobre HTTP](http://upcommons.upc.edu/pfc/bitstream/2099.1/16894/1/84799.pdf)
