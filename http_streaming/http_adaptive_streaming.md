@@ -37,7 +37,8 @@ DASH-IF believes that DASH-AVC/264 supports the Internet streaming main use case
 * [An Evaluation of Dynamic Adaptive Streaming over HTTP in Vehicular Environments](http://www-itec.uni-klu.ac.at/bib/files/p37-mueller.pdf). C. Müller, S. Lederer and C. Timmerer, In Proceedings of the ACM Multimedia Systems Conference 2012 and the 4th ACM Workshop on Mobile Video, Chapel Hill, North Carolina, February 24, 2012.
 
 #### Glossary
-* [OTT (Over the top)](http://en.wikipedia.org/wiki/Over-the-top_content)
+* [OTT (Over the top)](http://en.wikipedia.org/wiki/Over-the-top_content).
+* MPD. Media Presentation Description.
 
 ### Resources
 * [Building an Online Video Player with DASH-264](http://flippinawesome.org/2013/11/18/building-an-online-video-player-with-dash-264/#)
