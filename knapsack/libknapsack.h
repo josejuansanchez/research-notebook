@@ -6,7 +6,7 @@
 #define PROFIT_FILENAME "profit.txt"
 #define ORDERED_LIST_FILENAME "ordered_list.txt"
 
-#define DEBUG 1
+#define DEBUG 0
 
 typedef struct {
 	long precinct_id;
