@@ -32,6 +32,16 @@ function CheckExitStatusCode()
 	fi
 }
 
+function clean_temp_files()
+{
+	rm *.cache > /dev/null 2>&1
+	rm *.lrcp  > /dev/null 2>&1
+	rm *.sort  > /dev/null 2>&1
+	rm *.woi   > /dev/null 2>&1
+	rm *.pgm   > /dev/null 2>&1
+	rm bytes.readed > /dev/null 2>&1
+}
+
 function check_psnr_mode {
 
 	MODE=$1
@@ -40,13 +50,8 @@ function check_psnr_mode {
 
 	for ((LAYER=1; LAYER <= CLAYERS ; LAYER++))
 	do
-		# Cleaning a bit
-		rm *.cache > /dev/null 2>&1
-		rm *.lrcp  > /dev/null 2>&1
-		rm *.sort  > /dev/null 2>&1
-		rm *.woi   > /dev/null 2>&1
-		rm *.pgm   > /dev/null 2>&1
-		rm bytes.readed > /dev/null 2>&1
+		# Cleaning temporary files
+		clean_temp_files
 
 		$WOISTOCACHE $IMAGE_J2C wois.txt $W_PRECINT_SIZE $H_PRECINT_SIZE $(($CLEVELS+1)) $LAYER 999999999 $MODE > /dev/null 2>&1
 		CheckExitStatusCode
@@ -88,6 +93,9 @@ function check_psnr_mode {
 
 		echo -e "Layer: $LAYER \t PSNR_VS_SAME_QL: $PSNR_VS_SAME_QL \t PSNR_VS_ALL_QL: $PSNR_VS_ALL_QL \t BYTES_READED: $BYTES_READED"
 	done
+
+	# Cleaning temporary files
+	clean_temp_files
 }  
 
 #################################################
