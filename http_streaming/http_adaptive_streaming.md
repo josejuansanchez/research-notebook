@@ -43,6 +43,7 @@ In order to help speed adoption of MPEG-DASH, the DASH Industry Forum proposed a
 * [DASH Industry Forum](http://dashif.org)
 * [Institute of Information Technology, Multimedia Communication (MMC) Group ](http://www-itec.aau.at/dash)
 * [Bitmovin](http://www.bitmovin.net)
+* [dash.js](https://github.com/Dash-Industry-Forum/dash.js). A reference client implementation for the playback of MPEG DASH via Javascript and compliant browsers.
 
 ### Papers and Presentations in Conferences
 * [HTTP Adaptive Streaming: Principles, Ongoing Research and Standards](http://www.employees.org/~acbegen/files/HAS_Tutorial_ICME_2013_Begen_Stockhammer.pdf). ICME 2013. Ali C. Begen and  Thomas Stockhammer.
