@@ -48,3 +48,6 @@
 ### Books
   * [Image Statistics in Visual Computing &raquo;](http://www.imagestatisticsbook.com)
   * [Notebooks of the Mind: Explorations of Thinking &raquo;](http://www.amazon.com/Notebooks-Mind-Explorations-Vera-John-Steiner/dp/0195108965)
+
+### Medley
+  * http://compressor.io/
