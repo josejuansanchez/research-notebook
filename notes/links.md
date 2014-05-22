@@ -51,3 +51,4 @@
 
 ### Medley
   * http://compressor.io/
+  * [speedtest-cli](https://github.com/sivel/speedtest-cli). Command line interface for testing internet bandwidth using speedtest.net
