@@ -21,6 +21,10 @@ CLAYERS=8
 WIDTH_RECONS=1280
 HEIGHT_RECONS=768
 
+#Type of output
+OUTPUT=JSON
+#OUTPUT=TEXT
+
 #################################################
 
 # Functions
@@ -49,12 +53,19 @@ function check_psnr_mode {
 	IMAGE_J2C_CACHE=${2}.cache
 	WOI_COORDINATES=$3
 	PRECINCT_ID=$4
+	NUMBER_OF_WOIS=$5
 
 	# Get the x,y coordinates from the file
 	COORD_X=`cat $WOI_COORDINATES | awk '{print $1}'`
 	COORD_Y=`cat $WOI_COORDINATES | awk '{print $2}'`
 
-	echo "COORD_X: $COORD_X **** COORD_Y: $COORD_Y"
+	if [ $OUTPUT = "JSON" ]; then
+		echo -e "{"
+		echo -e "\"id\": $PRECINCT_ID,"
+		echo -e "\"coord_x\": $COORD_X,"
+		echo -e "\"coord_y\": $COORD_Y,"
+		echo -e "\"layers\": ["
+	fi
 
 	for ((LAYER=1; LAYER <= CLAYERS ; LAYER++))
 	do
@@ -73,7 +84,8 @@ function check_psnr_mode {
 		CheckExitStatusCode
 		
 		# TEST
-		cp out_cut.pgm out_cut_${PRECINCT_ID}_${COORD_X}_${COORD_Y}.pgm
+		#KK=`printf %03d $PRECINCT_ID`
+		#cp out_cut.pgm out_cut_${KK}_${COORD_X}_${COORD_Y}.pgm
 
 		#display out_cut.pgm 
 		kdu_expand -i $IMAGE_J2C -o 1ql.pgm -layers $LAYER > /dev/null 2>&1
@@ -102,8 +114,27 @@ function check_psnr_mode {
 		grep "PSNR\[dB\]" | awk '{print $3}'`
 		CheckExitStatusCode
 
-		echo -e "Layer: $LAYER \t PSNR_VS_SAME_QL: $PSNR_VS_SAME_QL \t PSNR_VS_ALL_QL: $PSNR_VS_ALL_QL \t BYTES_READED: $BYTES_READED"
+		if [ $OUTPUT = "JSON" ]; then
+			OUT="{\"ql\": $LAYER, \"bytes\": $BYTES_READED, \"psnr\": $PSNR_VS_ALL_QL}"
+
+			if [ $LAYER != $CLAYERS ]; then
+				OUT=${OUT}","
+			fi
+			echo -e "\t$OUT"
+		else
+			echo -e "Layer: $LAYER \t PSNR_VS_SAME_QL: $PSNR_VS_SAME_QL \t PSNR_VS_ALL_QL: $PSNR_VS_ALL_QL \t BYTES_READED: $BYTES_READED"		
+		fi
 	done
+
+	if [ $OUTPUT = "JSON" ]; then
+		echo -e "\t]"
+
+		if [ $PRECINCT_ID -lt $(($NUMBER_OF_WOIS-1)) ]; then
+			echo -e "},"
+		else
+			echo -e "}"		
+		fi
+	fi
 
 	# Cleaning temporary files
 	clean_temp_files
@@ -123,15 +154,24 @@ function check_psnr_mode {
 
 WOI_LIST=wois.txt
 PRECINCT_ID=0
+
+if [ $OUTPUT = "JSON" ]; then
+	echo -e "["
+fi
+
+NUMBER_OF_WOIS=`wc -l $WOI_LIST | awk '{print $1}'`
+
 while read WOI_COORDINATES
 do
 	# Create a temp file with the coordinates
 	echo $WOI_COORDINATES > temp_woi.txt
 
-	# 1) Mode 0 (Kakadu Mode)
-	echo -e "\nTest Mode 0 (Kakadu Mode): WOI: $WOI_COORDINATES"
-	check_psnr_mode 0 image.j2c temp_woi.txt $PRECINCT_ID
-
+	# Mode 1 (Exact WOI)
+	check_psnr_mode 1 image.j2c temp_woi.txt $PRECINCT_ID $NUMBER_OF_WOIS
+	
 	PRECINCT_ID=$(($PRECINCT_ID+1))
-
 done < $WOI_LIST
+
+if [ $OUTPUT = "JSON" ]; then
+	echo -e "]"
+fi
