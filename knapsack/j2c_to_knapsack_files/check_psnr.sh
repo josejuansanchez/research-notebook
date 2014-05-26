@@ -42,7 +42,7 @@ function clean_temp_files()
 	rm *.lrcp  > /dev/null 2>&1
 	rm *.sort  > /dev/null 2>&1
 	rm *.woi   > /dev/null 2>&1
-	#rm *.pgm   > /dev/null 2>&1
+	rm *.pgm   > /dev/null 2>&1
 	rm bytes.readed > /dev/null 2>&1
 }
 
@@ -152,7 +152,15 @@ function check_psnr_mode {
 #echo -e "\nTest Mode 1 (Exact WOI)"
 #check_psnr_mode 1 image.j2c wois.txt
 
-WOI_LIST=wois.txt
+#################################################
+
+if [ $# -ne 2 ]; then
+	echo -e "\nUso: $0 <IMAGE.J2C> <WOI_LIST>\n";
+	exit;
+fi
+
+IMAGE_J2C=$1
+WOI_LIST=$2
 PRECINCT_ID=0
 
 if [ $OUTPUT = "JSON" ]; then
@@ -167,7 +175,7 @@ do
 	echo $WOI_COORDINATES > temp_woi.txt
 
 	# Mode 1 (Exact WOI)
-	check_psnr_mode 1 image.j2c temp_woi.txt $PRECINCT_ID $NUMBER_OF_WOIS
+	check_psnr_mode 1 $IMAGE_J2C temp_woi.txt $PRECINCT_ID $NUMBER_OF_WOIS
 	
 	PRECINCT_ID=$(($PRECINCT_ID+1))
 done < $WOI_LIST
