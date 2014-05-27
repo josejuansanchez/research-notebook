@@ -163,11 +163,12 @@ IMAGE_J2C=$1
 WOI_LIST=$2
 PRECINCT_ID=0
 
-if [ $OUTPUT = "JSON" ]; then
-	echo -e "["
-fi
-
 NUMBER_OF_WOIS=`wc -l $WOI_LIST | awk '{print $1}'`
+
+if [ $OUTPUT = "JSON" ]; then
+	echo -e "{ \"number_of_precincts\": $NUMBER_OF_WOIS,";
+	echo -e "\"precincts\": ["
+fi
 
 while read WOI_COORDINATES
 do
@@ -181,5 +182,5 @@ do
 done < $WOI_LIST
 
 if [ $OUTPUT = "JSON" ]; then
-	echo -e "]"
+	echo -e "]}"
 fi
