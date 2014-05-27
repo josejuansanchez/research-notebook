@@ -2,8 +2,8 @@
 #define MIN_PSNR_VALUE 10
 #define MAX_PSNR_VALUE 50
 
-#define WEIGHTS_FILENAME "weights.txt"
-#define PROFIT_FILENAME "profit.txt"
+#define WEIGHTS_FILENAME 	  "weights.txt"
+#define PROFIT_FILENAME 	  "profit.txt"
 #define ORDERED_LIST_FILENAME "ordered_list.txt"
 
 #define DEBUG 0
