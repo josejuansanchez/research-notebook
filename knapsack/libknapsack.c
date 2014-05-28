@@ -138,19 +138,10 @@ void method_2(long max_precincts, int max_quality_layers, long budget, long * or
 }
 
 void print_solution(solution sol) {
-	printf("\nSum (bytes): %ld\n", sol.sum_bytes);
-	printf("Sum (profit): %f\n", sol.sum_profit);
-
-	/*
-	printf("Solution list:\n");
-	int i;
-	for(i=0; i<sol.ne; i++) {
-		printf("id: %ld \t ql: %d\n", sol.list[i].precinct_id, sol.list[i].quality_layer);
-	}
-	*/
+	printf("\n{\"sum_bytes\": %ld, \"sum_profit\": %f}\n", sol.sum_bytes, sol.sum_profit);
 }
 
-void find_best_solution(solution sol1, solution *sol2, int max_quality_layers) {
+best_solution find_best_solution(solution sol1, solution *sol2, int max_quality_layers) {
 	int i;
 
 	// Number of the method with the best solution (1 or 2)
@@ -177,12 +168,20 @@ void find_best_solution(solution sol1, solution *sol2, int max_quality_layers) {
 	}
 
 	// Test
+	best_solution the_best_solution;
+	the_best_solution.method = sol_method;
+	the_best_solution.max_profit = max_profit;
+
 	if (sol_method == 2) {
-		printf("\nThe best solution is the method: %d with: %d quality layer with a profit of: %lf\n", sol_method, sol_index_ql, max_profit);
-		printf(" ** NOTE: The number of the quality layer is zero based **\n");
+		// The number of the quality layer is zero based	
+		the_best_solution.index_ql = sol_index_ql;	
+		
+		if (DEBUG) printf("\nThe best solution is the method: %d with: %d quality layer with a profit of: %lf\n", sol_method, sol_index_ql, max_profit);
+		if (DEBUG) printf(" ** NOTE: The number of the quality layer is zero based **\n");
 	} else {
-		printf("\nThe best solution is the method: %d with a profit of: %lf\n", sol_method, max_profit);
+		if (DEBUG) printf("\nThe best solution is the method: %d with a profit of: %lf\n", sol_method, max_profit);
 	}
+	return the_best_solution;
 }
 
 // Print weights values
@@ -210,19 +209,19 @@ void print_profit_values(long max_precincts, int max_quality_layers, double **pr
 }
 
 // Print ordered_list values
-void print_ordered_list_values(long max_precincts, long *ordered_list) {
+void print_ordered_list_values(long ne_ordered_list, long *ordered_list) {
 	int i;
 	printf("\nordered_list: \n");
-	for(i=0; i<max_precincts; i++) {
+	for(i=0; i<ne_ordered_list; i++) {
 		printf(" %4ld ", ordered_list[i]);
 	}
 }
 
-// Print all the precincts with their weight and profit
-void print_precincts_weight_profit(long max_precincts, int max_quality_layers, long **weights, double **profit, long *ordered_list) {
+// Print the precincts with their weight and profit
+void print_precincts_weight_profit(long ne_ordered_list, int max_quality_layers, long **weights, double **profit, long *ordered_list) {
 	int i, j;
 	printf("\n\n");
-	for(i=0; i<max_precincts; i++) {
+	for(i=0; i<ne_ordered_list; i++) {
 
 		long pos = ordered_list[i];
 
@@ -367,16 +366,27 @@ void check_methods(long max_precincts, int max_quality_layers, long budget, long
 		method_2(max_precincts, max_quality_layers, budget, ordered_list, weights, profit, i, &sol2[i]);
 	}
 
-	// Print the results for all the solutions
-	printf("\nSolution 1:\n###########");
-	print_solution(sol1);
-
-	printf("\nSolution 2:\n###########");
-	for(i=0; i<max_quality_layers; i++) {
-		printf("\n--- Quality Layer: %d", i);
-		print_solution(sol2[i]);
-	}
-
 	// Find the best solution (max profit)	
-	find_best_solution(sol1, sol2, max_quality_layers);	
+	best_solution solution = find_best_solution(sol1, sol2, max_quality_layers);
+
+	// Print the best solution
+	printf("{\"solution\":");
+	printf("\n\t{\"method\": %d,", solution.method);
+
+	// **** IMPORTANT NOTE!!: We add +1 to the quality layer ****
+	if (solution.method == 2) {		
+		printf("\n\t\"ql\": %d,", solution.index_ql + 1);
+	}	
+	printf("\n\t\"max_profit\": %lf},", solution.max_profit);
+
+	// Print the results for the method 1
+	printf("\n\"method_1\": \n\t{\"sum_bytes\": %ld, \"sum_profit\": %f},\n", sol1.sum_bytes, sol1.sum_profit);
+
+	// Print the results for the method 2
+	printf("\"method_2\": [\n");
+	for(i=0; i < max_quality_layers-1; i++) {
+		printf("\t{\"ql\": %d, \"sum_bytes\": %ld, \"sum_profit\": %f},\n", (i+1), sol2[i].sum_bytes, sol2[i].sum_profit);
+	}
+	printf("\t{\"ql\": %d, \"sum_bytes\": %ld, \"sum_profit\": %f}]\n", (max_quality_layers), sol2[max_quality_layers-1].sum_bytes, sol2[max_quality_layers-1].sum_profit);	
+	printf("}\n");
 }
