@@ -11,6 +11,8 @@
   * [How to write for Technical Periodicals & Conferences](http://mc.manuscriptcentral.com/societyimages/tgrs/author_guide_interactive%20English.pdf). IEEE Authorship Series.
   * [IEEE Editorial Style Manual](http://www.ieee.org/documents/stylemanual.pdf).
   * [Write good papers](http://lemire.me/blog/rules-to-write-a-good-research-paper/).
+  * [Papers we love to read](https://github.com/papers-we-love/papers-we-love). 
+Papers from the computer science community to read and discuss.
 
 ### Tools and Utils
   * [Pandoc: A universal document converter &raquo;](http://johnmacfarlane.net/pandoc/index.html)
