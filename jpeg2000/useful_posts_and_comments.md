@@ -1,6 +1,5 @@
 ## Kakadu JPEG2000 Discussion Group
 * [Custom Java JPIP Server with Kakadu API](https://groups.yahoo.com/neo/groups/kakadu_jpeg2000/conversations/messages/6910)
-
 * [JPIP Sessions and channels](https://groups.yahoo.com/neo/groups/kakadu_jpeg2000/conversations/messages/6078)
 
 JPIP is a pre-emptive protocol:
