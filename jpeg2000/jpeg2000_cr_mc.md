@@ -119,3 +119,5 @@ content delivery network.
 
 * [A New Video Compression Scheme Combining Conditional Replenishment and Address Event Representation](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4387612)  
   IEEE Workshop on Signal Processing Systems, 2007. Date of Conference: 17-19 Oct. 2007.
+
+* [Adaptation of the method of estimation and motion compensation int he transmission of the video sequence in JPEG2000](http://airccse.org/journal/ijdps/papers/3612ijdps14.pdf). International Journal of Distributed and Parallel Systems (IJDPS) Vol.3, No.6, November 2012. Abdou Khadre Diop.
