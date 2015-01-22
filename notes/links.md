@@ -5,7 +5,7 @@
  * [Book: The Ph. D. Grind](http://www.pgbovine.net/PhD-memoir.htm). The Ph.D. Grind, a 122-page e-book, is the first known detailed account of an entire Ph.D. experience. 
  * [The PhD Application Handbook &raquo;](http://www.amazon.co.uk/PhD-Application-Handbook-Revised-Skills/dp/0335246966/)
  * [PhD Survival Guide](http://www.cs.unc.edu/~azuma/hitch4.html)
-
+ * [How to Be a Succesful PhD Student (in Computer Science)](http://people.cs.umass.edu/~wallach/how_to_be_a_successful_phd_student.pdf)
 
 ### Write good papers
   * [How to write for Technical Periodicals & Conferences](http://mc.manuscriptcentral.com/societyimages/tgrs/author_guide_interactive%20English.pdf). IEEE Authorship Series.
