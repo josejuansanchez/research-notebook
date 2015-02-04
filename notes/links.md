@@ -13,6 +13,7 @@
   * [Write good papers](http://lemire.me/blog/rules-to-write-a-good-research-paper/).
   * [Papers we love to read](https://github.com/papers-we-love/papers-we-love). 
 Papers from the computer science community to read and discuss.
+  * [How to write a paper](https://mluebbecke.wordpress.com/2014/11/21/how-to-write-a-paper/).
 
 ### Tools and Utils
   * [Pandoc: A universal document converter &raquo;](http://johnmacfarlane.net/pandoc/index.html)
