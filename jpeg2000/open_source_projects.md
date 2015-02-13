@@ -9,6 +9,8 @@ Review:
 * http://libimages.princeton.edu/osd-demo/
 * [Loris IIIF Image Server](https://github.com/pulibrary/loris)
 * [zoom.it](http://zoom.it)
+* [IIIF Image Server](https://github.com/klokantech/iiifserver). JPEG2000 Image Server.
+  * Demo: http://klokantech.github.io/iiifviewer/
 
 Projects:
 * [ESA JPIP Server](https://launchpad.net/esajpip)
