@@ -8,3 +8,6 @@
 
 ### Videos
 * [SmashingConf Whistler: Yoav Weiss on Responsive Images](http://vimeo.com/117250453)
+
+### Courses
+* [Responsive Images - Fewer Bytes, Faster Loads](https://www.udacity.com/course/ud882). Course on Udacity.
